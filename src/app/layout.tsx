@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Chakra_Petch, Inter } from "next/font/google";
 import "./globals.css";
-
+import Navigation from "@/components/Navigation";
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
 //   subsets: ["latin"],
@@ -39,6 +39,7 @@ export default function RootLayout({
       <body
         className={`${chakraPetch.className} ${inter.className} antialiased`}
       >
+        <Navigation />
         {children}
       </body>
     </html>
