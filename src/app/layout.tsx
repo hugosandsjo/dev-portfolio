@@ -1,15 +1,27 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Chakra_Petch, Inter } from "next/font/google";
 import "./globals.css";
+import Navigation from "@/components/Navigation";
+// const geistSans = Geist({
+//   variable: "--font-geist-sans",
+//   subsets: ["latin"],
+// });
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+// const geistMono = Geist_Mono({
+//   variable: "--font-geist-mono",
+//   subsets: ["latin"],
+// });
+
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
+  weight: ["400", "700"], // Add valid weights
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const chakraPetch = Chakra_Petch({
+  variable: "--font-chakra-petch",
   subsets: ["latin"],
+  weight: ["400", "700"], // Add valid weights
 });
 
 export const metadata: Metadata = {
@@ -25,8 +37,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${chakraPetch.className} ${inter.className} antialiased`}
       >
+        <Navigation />
         {children}
       </body>
     </html>
