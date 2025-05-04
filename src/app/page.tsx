@@ -1,5 +1,4 @@
 import Image from "next/image";
-// import profilePic from "@/public/profile_image.jpg";
 import profilePic from "../../public/profile_image.jpg";
 
 export default function Home() {
