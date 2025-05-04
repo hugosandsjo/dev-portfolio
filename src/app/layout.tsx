@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Chakra_Petch, Inter } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
+import { ReactLenis } from "@/utils/lenis";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -27,12 +28,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${chakraPetch.className} ${inter.className} antialiased`}
-      >
-        <Navigation />
-        {children}
-      </body>
+      <ReactLenis root>
+        <body
+          className={`${chakraPetch.className} ${inter.className} antialiased`}
+        >
+          <Navigation />
+          {children}
+        </body>
+      </ReactLenis>
     </html>
   );
 }
