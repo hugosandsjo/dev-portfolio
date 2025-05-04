@@ -1,6 +1,5 @@
 import Image from "next/image";
 import profilePic from "../../public/profile_image.jpg";
-import blobProfilePic from "../../public/blob_profile_image.png";
 
 export default function Home() {
   return (
