@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Contact() {
   return (
     <div className="bg-gray-200 flex flex-col items-center justify-items-center min-h-screen p-8 pb-20 gap-1 sm:p-20 font-[family-name:var(--font-geist-sans)]">
@@ -12,11 +14,13 @@ export default function Contact() {
         </p>
       </div>
       <div className="w-full flex flex-col gap-4 p-8">
-        <h2 className="text-3xl md:text-6xl xl:text-7xl">0707224289</h2>
-        <h2 className="text-3xl md:text-6xl xl:text-7xl">
+        <h2 className="text-lg sm:text-3xl md:text-5xl">0707224289</h2>
+        <h2 className="text-lg sm:text-3xl md:text-5xl">
           hugosandsjo@gmail.com
         </h2>
-        <h2 className="text-3xl md:text-6xl xl:text-7xl">Github</h2>
+        <Link href="https://github.com/hugosandsjo">
+          <h2 className="text-lg sm:text-3xl md:text-5xl">Github</h2>
+        </Link>
       </div>
     </div>
   );
