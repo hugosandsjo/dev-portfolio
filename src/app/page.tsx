@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import profilePic from "../../public/profile_image.jpg";
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 import Lenis from "lenis";
 import "@/app/globals.css";
 
