@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Chakra_Petch, Inter } from "next/font/google";
+import { Inter, Ubuntu, Outfit } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 import { ReactLenis } from "@/utils/lenis";
@@ -10,10 +10,10 @@ const inter = Inter({
   weight: ["400", "700"], // Add valid weights
 });
 
-const chakraPetch = Chakra_Petch({
-  variable: "--font-chakra-petch",
+const outfit = Outfit({
+  variable: "--font-outfit",
   subsets: ["latin"],
-  weight: ["400", "700"], // Add valid weights
+  weight: ["300", "400", "500", "600", "700"], // Add valid weights
 });
 
 export const metadata: Metadata = {
@@ -29,9 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <ReactLenis root>
-        <body
-          className={`${chakraPetch.className} ${inter.className} antialiased`}
-        >
+        <body className={`${outfit.className} ${inter.className} antialiased`}>
           <Navigation />
           {children}
         </body>

@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Navigation() {
   return (
-    <nav className="flex gap-4 w-full justify-between items-center py-8 px-6 bg-gray-200">
+    <nav className="flex gap-4 w-full justify-between items-center py-8 px-20 bg-gray-200">
       <Link href={"/"} className="w-10 h-10">
         <svg
           width="100%"
@@ -17,7 +17,7 @@ export default function Navigation() {
           />
         </svg>
       </Link>
-      <div className="flex gap-8">
+      {/* <div className="flex gap-8">
         <Link
           href="/work"
           className="text-black text-xl hover:underline underline-offset-4"
@@ -31,7 +31,7 @@ export default function Navigation() {
         >
           Contact
         </Link>
-      </div>
+      </div> */}
     </nav>
   );
 }
