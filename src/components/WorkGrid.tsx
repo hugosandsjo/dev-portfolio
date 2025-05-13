@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 export default function WorkGrid() {
@@ -7,7 +8,10 @@ export default function WorkGrid() {
       <h1 className="text-2xl font-semibold">Work</h1>
       <hr className="border-t-2 border-black" />
       <div className="grid sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-5 gap-8">
-        <div className="flex flex-col gap-2">
+        <Link
+          href={`/work/fullkoll`}
+          className="flex flex-col gap-2 fade-div cursor-pointer"
+        >
           <div className="relative h-[280px] w-full">
             <Image
               src={"/fullkoll/fullkoll_main.jpg"}
@@ -17,21 +21,24 @@ export default function WorkGrid() {
               priority
             />
           </div>
-          <div className="flex flex-col gap-1 fade-div">
+          <div className="flex flex-col gap-1">
             <h2 className="text-2xl font-semibold">Full koll!</h2>
             <h3 className="text-md opacity-60 font-regular italic">
               Illustration
             </h3>
           </div>
-          <p className="text-md leading-[1.5] font-light fade-div">
+          <p className="text-md leading-[1.5] font-light">
             Together with Gullersgrupp, I developed a set of illustrations and
             visual identity for the County Administrative Board and the Full
             Koll campaign. Intended to inform teenage parents about setting
             boundaries around alcohol and drugs and the importance of talking
             about the subject.
           </p>
-        </div>
-        <div className="flex flex-col gap-2 fade-div">
+        </Link>
+        <Link
+          href={`/work/dumkeramik`}
+          className="flex flex-col gap-2 fade-div cursor-pointer"
+        >
           <div className="relative h-[280px] w-full">
             <Image
               src={"/dumkeramik/dumkeramik.png"}
@@ -52,7 +59,7 @@ export default function WorkGrid() {
             classic design techniques into the digital landscape. I get excited
             about visual problem solving and depending on the...
           </p>
-        </div>
+        </Link>
         <div className="flex flex-col gap-2 fade-div">
           <div className="relative h-[280px] w-full">
             <Image
