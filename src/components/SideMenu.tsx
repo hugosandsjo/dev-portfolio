@@ -3,7 +3,7 @@ export default function SideMenu() {
     <section className="col-span-full md:col-span-4 flex flex-col gap-8 ">
       <div className="flex flex-col gap-4">
         <h1 className="text-2xl font-semibold">About</h1>
-        <hr className="border-t-3 border-black" />
+        <hr className="border-t-2 border-black" />
         <p className="text-md leading-[1.5] font-light">
           With a background in arts and crafts i bring my knowledge in classic
           design techniques into the digital landscape. I get excited about
@@ -14,7 +14,7 @@ export default function SideMenu() {
       </div>
       <div className="flex flex-col gap-4">
         <h1 className="text-2xl font-semibold">About</h1>
-        <hr className="border-t-3 border-black" />
+        <hr className="border-t-2 border-black" />
         <p className="text-md leading-[1.5] font-light">
           With a background in arts and crafts i bring my knowledge in classic
           design techniques into the digital landscape. I get excited about
@@ -24,7 +24,7 @@ export default function SideMenu() {
         </p>
       </div>
       <div className="flex flex-col gap-4">
-        <hr className="border-t-3 border-black" />
+        <hr className="border-t-2 border-black" />
         <h1 className="text-2xl font-semibold">hugosandsjo@gmail.com</h1>
         <h1 className="text-2xl font-semibold">0707224289</h1>
         <h1 className="text-2xl font-semibold">Instagram</h1>
