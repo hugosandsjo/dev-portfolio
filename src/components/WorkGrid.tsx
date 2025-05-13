@@ -5,7 +5,7 @@ export default function WorkGrid() {
     <section className="col-span-full md:col-span-8 flex flex-col gap-4">
       <h1 className="text-2xl font-semibold">Work</h1>
       <hr className="border-t-2 border-black" />
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-8">
         <div className="flex flex-col gap-2">
           <div className="bg-black h-[240px] w-full fade-div"></div>
           <div className="flex flex-col gap-1 fade-div">
