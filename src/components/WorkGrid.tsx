@@ -2,10 +2,10 @@ import React from "react";
 
 export default function WorkGrid() {
   return (
-    <section className="col-span-full md:col-span-8 flex flex-col gap-4">
+    <section className="col-span-full md:col-span-8 2xl:col-span-10 flex flex-col gap-4">
       <h1 className="text-2xl font-semibold">Work</h1>
       <hr className="border-t-2 border-black" />
-      <div className="grid sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-8">
+      <div className="grid sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-5 gap-8">
         <div className="flex flex-col gap-2">
           <div className="bg-black h-[240px] w-full fade-div"></div>
           <div className="flex flex-col gap-1 fade-div">

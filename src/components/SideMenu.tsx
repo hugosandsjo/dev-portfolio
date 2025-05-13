@@ -1,6 +1,6 @@
 export default function SideMenu() {
   return (
-    <section className="col-span-full md:col-span-4 flex flex-col gap-8 ">
+    <section className="col-span-full md:col-span-4 2xl:col-span-2 flex flex-col gap-8 ">
       <div className="flex flex-col gap-4">
         <h1 className="text-2xl font-semibold">About</h1>
         <hr className="border-t-2 border-black" />
@@ -25,9 +25,11 @@ export default function SideMenu() {
       </div>
       <div className="flex flex-col gap-4">
         <hr className="border-t-2 border-black" />
-        <h1 className="text-2xl font-semibold">hugosandsjo@gmail.com</h1>
-        <h1 className="text-2xl font-semibold">0707224289</h1>
-        <h1 className="text-2xl font-semibold">Instagram</h1>
+        <div className="flex flex-col gap-1">
+          <h3 className="text-lg font-semibold">hugosandsjo@gmail.com</h3>
+          <h3 className="text-lg font-semibold">0707224289</h3>
+          <h3 className="text-lg font-semibold">Instagram</h3>
+        </div>
       </div>
     </section>
   );
