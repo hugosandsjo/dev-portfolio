@@ -1,6 +1,6 @@
 export default function SideMenu() {
   return (
-    <section className="col-span-4 flex flex-col gap-8 ">
+    <section className="col-span-full md:col-span-4 flex flex-col gap-8 ">
       <div className="flex flex-col gap-4">
         <h1 className="text-2xl font-semibold">About</h1>
         <hr className="border-t-3 border-black" />
