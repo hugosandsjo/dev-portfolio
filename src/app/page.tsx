@@ -1,7 +1,5 @@
 "use client";
 
-import Image from "next/image";
-import profilePic from "../../public/profile_image.jpg";
 import { useEffect } from "react";
 import Lenis from "lenis";
 import "@/app/globals.css";

@@ -21,21 +21,6 @@ export default function Navigation() {
       <div>
         <h2 className="text-3xl font-semibold">Code!</h2>
       </div>
-      {/* <div className="flex gap-8">
-        <Link
-          href="/work"
-          className="text-black text-xl hover:underline underline-offset-4"
-        >
-          Work
-        </Link>
-
-        <Link
-          href="/contact"
-          className="text-black text-xl hover:underline underline-offset-4"
-        >
-          Contact
-        </Link>
-      </div> */}
     </nav>
   );
 }
