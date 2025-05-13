@@ -16,7 +16,7 @@ export default async function SingleCase({}) {
             priority
           />
         </div>
-        <div className="w-full h-[800px] flex flex-col gap-4">
+        <div className="w-full flex flex-col gap-4">
           <h2 className="text-3xl font-semibold">Full koll!</h2>
           <p>
             Together with Gullersgrupp, I developed a set of illustrations and
@@ -26,6 +26,11 @@ export default async function SingleCase({}) {
             about the subject.
           </p>
         </div>
+      </div>
+      <div className="h-[400px] border flex ga-4">
+        <div className="h-full w-[320px] border"></div>
+        <div className="h-full w-[320px] border"></div>
+        <div className="h-full w-[320px] border"></div>
       </div>
     </section>
   );
