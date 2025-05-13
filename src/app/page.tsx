@@ -70,11 +70,16 @@ export default function Home() {
               deliver the desired result.
             </p>
           </div>
+          <div className="flex flex-col gap-4">
+            <h1 className="text-2xl font-semibold">hugosandsjo@gmail.com</h1>
+            <h1 className="text-2xl font-semibold">0707224289</h1>
+            <h1 className="text-2xl font-semibold">Instagram</h1>
+          </div>
         </section>
         <section className="col-span-8 flex flex-col gap-4">
           <h1 className="text-2xl font-semibold">Work</h1>
-          <div className=" flex flex-row gap-8">
-            <div className="w-1/3 flex flex-col gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="flex flex-col gap-8">
               <div className="bg-black h-[240px] w-full"></div>
               <p className="text-md leading-[1.5] font-light">
                 With a background in arts and crafts i bring my knowledge in
@@ -84,7 +89,7 @@ export default function Home() {
                 to deliver the desired result.
               </p>
             </div>
-            <div className="w-1/3 flex flex-col gap-8 ">
+            <div className="flex flex-col gap-8">
               <div className="bg-black h-[240px] w-full"></div>
               <p className="text-md leading-[1.5] font-light">
                 With a background in arts and crafts i bring my knowledge in
@@ -94,7 +99,7 @@ export default function Home() {
                 to deliver the desired result.
               </p>
             </div>
-            <div className="w-1/3 flex flex-col gap-8">
+            <div className="flex flex-col gap-8">
               <div className="bg-black h-[240px] w-full"></div>
               <p className="text-md leading-[1.5] font-light">
                 With a background in arts and crafts i bring my knowledge in
@@ -104,7 +109,7 @@ export default function Home() {
                 to deliver the desired result.
               </p>
             </div>
-            <div className="w-1/3 flex flex-col gap-8">
+            <div className="flex flex-col gap-8">
               <div className="bg-black h-[240px] w-full"></div>
               <p className="text-md leading-[1.5] font-light">
                 With a background in arts and crafts i bring my knowledge in
@@ -114,7 +119,37 @@ export default function Home() {
                 to deliver the desired result.
               </p>
             </div>
-            <div className="w-1/3 flex flex-col gap-8">
+            <div className="flex flex-col gap-8">
+              <div className="bg-black h-[240px] w-full"></div>
+              <p className="text-md leading-[1.5] font-light">
+                With a background in arts and crafts i bring my knowledge in
+                classic design techniques into the digital landscape. I get
+                excited about visual problem solving and depending on the needs
+                of the project I use graphic design, illustration and animation
+                to deliver the desired result.
+              </p>
+            </div>
+            <div className="flex flex-col gap-8">
+              <div className="bg-black h-[240px] w-full"></div>
+              <p className="text-md leading-[1.5] font-light">
+                With a background in arts and crafts i bring my knowledge in
+                classic design techniques into the digital landscape. I get
+                excited about visual problem solving and depending on the needs
+                of the project I use graphic design, illustration and animation
+                to deliver the desired result.
+              </p>
+            </div>
+            <div className="flex flex-col gap-8">
+              <div className="bg-black h-[240px] w-full"></div>
+              <p className="text-md leading-[1.5] font-light">
+                With a background in arts and crafts i bring my knowledge in
+                classic design techniques into the digital landscape. I get
+                excited about visual problem solving and depending on the needs
+                of the project I use graphic design, illustration and animation
+                to deliver the desired result.
+              </p>
+            </div>
+            <div className="flex flex-col gap-8">
               <div className="bg-black h-[240px] w-full"></div>
               <p className="text-md leading-[1.5] font-light">
                 With a background in arts and crafts i bring my knowledge in
