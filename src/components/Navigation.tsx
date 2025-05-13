@@ -17,6 +17,10 @@ export default function Navigation() {
           />
         </svg>
       </Link>
+
+      <div>
+        <h2 className="text-3xl font-semibold">Code!</h2>
+      </div>
       {/* <div className="flex gap-8">
         <Link
           href="/work"
