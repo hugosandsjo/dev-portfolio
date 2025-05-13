@@ -25,8 +25,8 @@ export default function WorkGrid() {
           </div>
           <p className="text-md leading-[1.5] font-light fade-div">
             Together with Gullersgrupp, I developed a set of illustrations and
-            visual identity for the County Administrative Board and the 'Full
-            Koll’ campaign. Intended to inform teenage parents about setting
+            visual identity for the County Administrative Board and the Full
+            Koll campaign. Intended to inform teenage parents about setting
             boundaries around alcohol and drugs and the importance of talking
             about the subject.
           </p>
