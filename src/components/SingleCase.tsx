@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { cases } from "@/data/caseData";
 import { notFound } from "next/navigation";
-import { useEffect } from "react";
+import { useEffect, useState, useRef } from "react";
 import Link from "next/link";
 
 interface SingleCaseProps {
@@ -13,11 +13,45 @@ interface SingleCaseProps {
 export default function SingleCase({ slug }: SingleCaseProps) {
   // Find the case by slug
   const caseItem = cases.find((c) => c.slug === slug);
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const stickyRef = useRef<HTMLDivElement>(null);
+  const initialScrollOffset = 500; // Adjust this value based on when you want the animation to start
 
   // If no case is found, show 404
   if (!caseItem) {
     notFound();
   }
+
+  // Handle scroll animation
+  useEffect(() => {
+    const handleScroll = () => {
+      const position = window.scrollY;
+      setScrollPosition(position);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  // Apply transform based on scroll position
+  useEffect(() => {
+    if (stickyRef.current) {
+      if (scrollPosition > initialScrollOffset) {
+        const translateY = Math.min(
+          100,
+          ((scrollPosition - initialScrollOffset) / 300) * 100
+        );
+        stickyRef.current.style.transform = `translateY(-${translateY}%)`;
+        stickyRef.current.style.opacity = `${1 - translateY / 100}`;
+      } else {
+        stickyRef.current.style.transform = "translateY(0)";
+        stickyRef.current.style.opacity = "1";
+      }
+    }
+  }, [scrollPosition]);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -47,14 +81,13 @@ export default function SingleCase({ slug }: SingleCaseProps) {
 
   return (
     <section className="col-span-full md:col-span-8 2xl:col-span-10 flex flex-col gap-4">
-      <div className="flex justify-between sticky bg-gray-200 pt-5 z-10 top-0">
+      <div className="flex justify-between sticky bg-gray-200 py-5 z-10 top-0">
         <Link href={`/`}>
           <h3 className="text-2xl font-semibold">{"<"}</h3>
         </Link>
         <h2 className="text-2xl font-semibold">{caseItem.title}</h2>
-        <hr className="border-t-2 border-black" />
       </div>
-      <hr className="border-t-2 border-black" />
+      <hr className="border-t-2 z-30 border-black -translate-y-4.5" />
       <div className="grid grid-cols-1 2xl:grid-cols-2 gap-8">
         {/* Left column with all images */}
         <div className="flex flex-col gap-8 order-2 2xl:order-1">
@@ -93,7 +126,10 @@ export default function SingleCase({ slug }: SingleCaseProps) {
         </div>
 
         {/* Right column with sticky text */}
-        <div className="w-full flex flex-col justify-between sticky top-12 py-5 h-fit overflow-y-auto 2xl:px-5 gap-4 order-1 2xl:order-2 bg-gray-200">
+        <div
+          ref={stickyRef}
+          className="w-full flex flex-col justify-between sticky top-12 py-5 h-fit overflow-y-auto 2xl:px-5 gap-4 order-1 2xl:order-2 bg-gray-200 transition-transform duration-300"
+        >
           <div className="text-md font-regular italic mb-2">
             {caseItem.category}
           </div>
