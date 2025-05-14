@@ -12,7 +12,7 @@ export default function WorkGrid() {
           href={`/work/fullkoll`}
           className="flex flex-col gap-2 fade-div cursor-pointer"
         >
-          <div className="relative h-[280px] w-full">
+          <div className="relative aspect-square sm:aspect-4/5 w-full">
             <Image
               src={"/fullkoll/fullkoll_main.jpg"}
               alt="Image"
@@ -39,7 +39,7 @@ export default function WorkGrid() {
           href={`/work/dumkeramik`}
           className="flex flex-col gap-2 fade-div cursor-pointer"
         >
-          <div className="relative h-[280px] w-full">
+          <div className="relative aspect-square sm:aspect-4/5 w-full">
             <Image
               src={"/dumkeramik/dumkeramik.png"}
               alt="Image"
@@ -61,7 +61,7 @@ export default function WorkGrid() {
           </p>
         </Link>
         <div className="flex flex-col gap-2 fade-div">
-          <div className="relative h-[280px] w-full">
+          <div className="relative aspect-square sm:aspect-4/5 w-full">
             <Image
               src={"/reel/Instagram_birdandgirl.gif"}
               alt="Image"
