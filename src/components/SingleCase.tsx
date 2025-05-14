@@ -51,7 +51,7 @@ export default function SingleCase({ slug }: SingleCaseProps) {
         <Link href={`/`}>
           <h3 className="text-2xl font-semibold">{"<"}</h3>
         </Link>
-        <h2 className="text-2xl font-semibold opacity-40">{caseItem.title}</h2>
+        <h2 className="text-2xl font-semibold">{caseItem.title}</h2>
       </div>
       <hr className="border-t-2 border-black" />
 
@@ -110,10 +110,10 @@ export default function SingleCase({ slug }: SingleCaseProps) {
           )}
           {caseItem.website && (
             <a
-              href={caseItem.website}
+              href={caseItem.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-500 hover:underline"
+              className="underline underline-offset-1"
             >
               {caseItem.website}
             </a>

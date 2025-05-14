@@ -41,7 +41,7 @@ export const cases: Case[] = [
     ],
     aspectRatio: "16/10",
     website: "dumkeramik.se",
-    url: "https://dumkeramik.se/",
+    url: "https://dumkeramik.com/",
   },
   {
     id: 3,
