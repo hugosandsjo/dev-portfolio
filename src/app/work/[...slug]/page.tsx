@@ -7,7 +7,6 @@ import type { Metadata, ResolvingMetadata } from "next";
 // Define the props for the page component
 type PageProps = {
   params: Promise<{ slug: string[] }>;
-  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 };
 
 // Generate metadata for the page
@@ -45,7 +44,7 @@ export function generateStaticParams() {
 }
 
 // Page component - handling the Promise params
-export default async function CasePage({ params, searchParams }: PageProps) {
+export default async function CasePage({ params }: PageProps) {
   // Resolve the params Promise
   const { slug } = await params;
 
