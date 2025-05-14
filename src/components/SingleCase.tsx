@@ -52,12 +52,9 @@ export default function SingleCase({ slug }: SingleCaseProps) {
           <h3 className="text-2xl font-semibold">{"<"}</h3>
         </Link>
         <h2 className="text-2xl font-semibold">{caseItem.title}</h2>
-        {/* <h2 className="text-2xl font-semibold opacity-40">
-          {caseItem.category}
-        </h2> */}
+        <hr className="border-t-2 border-black" />
       </div>
       <hr className="border-t-2 border-black" />
-
       <div className="grid grid-cols-1 2xl:grid-cols-2 gap-8">
         {/* Left column with all images */}
         <div className="flex flex-col gap-8 order-2 2xl:order-1">
@@ -97,12 +94,6 @@ export default function SingleCase({ slug }: SingleCaseProps) {
 
         {/* Right column with sticky text */}
         <div className="w-full flex flex-col justify-between sticky top-12 py-5 h-fit overflow-y-auto 2xl:px-5 gap-4 order-1 2xl:order-2 bg-gray-200">
-          {/* <div className="flex justify-between  gap-2">
-            <Link href={`/`}>
-              <h3 className="text-2xl font-semibold">{"<"}</h3>
-            </Link>
-            <h2 className="text-3xl font-semibold">{caseItem.title}</h2>
-          </div> */}
           <div className="text-md font-regular italic mb-2">
             {caseItem.category}
           </div>
