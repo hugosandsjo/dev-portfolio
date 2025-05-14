@@ -46,10 +46,10 @@ export default function SingleCase({ slug }: SingleCaseProps) {
   }, []);
 
   return (
-    <section className="col-span-full md:col-span-8 2xl:col-span-10 flex flex-col gap-4">
-      <div className="flex justify-between">
-        <Link href={`/`} className="text-2xl font-semibold">
-          Work
+    <section className="col-span-full md:col-span-8 2xl:col-span-10 flex flex-col  gap-4">
+      <div className="flex justify-between sticky bg-gray-200 py-5 z-10 top-0">
+        <Link href={`/`}>
+          <h3 className="text-2xl font-semibold">{"<"}</h3>
         </Link>
         <h2 className="text-2xl font-semibold opacity-40">{caseItem.title}</h2>
       </div>
@@ -93,14 +93,14 @@ export default function SingleCase({ slug }: SingleCaseProps) {
         </div>
 
         {/* Right column with sticky text */}
-        <div className="w-full flex flex-col justify-between sticky top-0 py-5 h-fit overflow-y-auto 2xl:px-5 gap-4 order-1 2xl:order-2 bg-gray-200">
-          <div className="flex justify-between 2xl:flex-col gap-2">
+        <div className="w-full flex flex-col justify-between sticky top-15 py-5 h-fit overflow-y-auto 2xl:px-5 gap-4 order-1 2xl:order-2 bg-gray-200">
+          {/* <div className="flex justify-between  gap-2">
             <Link href={`/`}>
               <h3 className="text-2xl font-semibold">{"<"}</h3>
             </Link>
             <h2 className="text-3xl font-semibold">{caseItem.title}</h2>
-          </div>
-          <div className="text-md opacity-60 font-regular italic mb-2">
+          </div> */}
+          <div className="text-md font-regular italic mb-2">
             {caseItem.category}
           </div>
           {caseItem.description && (
