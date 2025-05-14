@@ -47,9 +47,7 @@ export default function SingleCase({ slug }: SingleCaseProps) {
 
   return (
     <section className="col-span-full md:col-span-8 2xl:col-span-10 flex flex-col gap-4">
-      <Link href={`/`}>
-        <h2 className="text-2xl font-semibold">Back to cases</h2>
-      </Link>
+      <h2 className="text-2xl font-semibold">{caseItem.title}</h2>
       <hr className="border-t-2 border-black" />
 
       <div className="grid grid-cols-1 2xl:grid-cols-2 gap-8">
@@ -76,7 +74,7 @@ export default function SingleCase({ slug }: SingleCaseProps) {
                     ? "aspect-square"
                     : caseItem.aspectRatio === "16/10"
                     ? "aspect-[16/10]"
-                    : "aspect-[1/1]" // Default fallback
+                    : "aspect-[4/5]"
                 }`}
               >
                 <Image
@@ -110,6 +108,12 @@ export default function SingleCase({ slug }: SingleCaseProps) {
               {caseItem.website}
             </a>
           )}
+          <div>
+            {" "}
+            <Link href={`/`}>
+              <h3 className="text-2xl font-semibold">Back to cases</h3>
+            </Link>
+          </div>
         </div>
       </div>
     </section>

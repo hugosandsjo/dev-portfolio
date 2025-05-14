@@ -23,7 +23,7 @@ export const cases: Case[] = [
       "/fullkoll/mobile_03.jpg",
       // Add more images when available
     ],
-    aspectRatio: "1/1",
+    aspectRatio: "4/5",
   },
   {
     id: 2,
@@ -31,7 +31,7 @@ export const cases: Case[] = [
     slug: "dumkeramik",
     description:
       "A web development project focused on creating an online presence for a ceramic arts studio, showcasing their work and design philosophy.",
-    imagePath: "/dumkeramik/dumkeramik.png",
+    imagePath: "/dumkeramik/dumkeramik_logo.svg",
     category: "Web Development",
     additionalImages: [
       "/dumkeramik/dumkeramik_01.png",
