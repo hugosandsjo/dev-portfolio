@@ -17,6 +17,9 @@ export default function SingleCase({ slug }: SingleCaseProps) {
   const stickyRef = useRef<HTMLDivElement>(null);
   const initialScrollOffset = 500; // Adjust this value based on when you want the animation to start
 
+  // Add a state to track if on mobile viewport
+  const [isMobile, setIsMobile] = useState(false);
+
   // If no case is found, show 404
   if (!caseItem) {
     notFound();
@@ -36,9 +39,26 @@ export default function SingleCase({ slug }: SingleCaseProps) {
     };
   }, []);
 
-  // Apply transform based on scroll position
+  // Check viewport size on mount and resize
   useEffect(() => {
-    if (stickyRef.current) {
+    const checkViewport = () => {
+      setIsMobile(window.innerWidth < 768); // Tailwind's md breakpoint is 768px
+    };
+
+    // Initial check
+    checkViewport();
+
+    // Add resize listener
+    window.addEventListener("resize", checkViewport);
+
+    // Cleanup
+    return () => window.removeEventListener("resize", checkViewport);
+  }, []);
+
+  // Apply transform based on scroll position only on mobile
+  useEffect(() => {
+    if (stickyRef.current && isMobile) {
+      // Only apply on mobile
       if (scrollPosition > initialScrollOffset) {
         const translateY = Math.min(
           100,
@@ -50,8 +70,12 @@ export default function SingleCase({ slug }: SingleCaseProps) {
         stickyRef.current.style.transform = "translateY(0)";
         stickyRef.current.style.opacity = "1";
       }
+    } else if (stickyRef.current && !isMobile) {
+      // Reset styles on desktop
+      stickyRef.current.style.transform = "translateY(0)";
+      stickyRef.current.style.opacity = "1";
     }
-  }, [scrollPosition]);
+  }, [scrollPosition, isMobile]);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
