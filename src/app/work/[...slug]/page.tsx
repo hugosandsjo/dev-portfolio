@@ -11,7 +11,7 @@ interface CasePageProps {
   };
 }
 
-// Generate metadata for the page
+// Generate metadata for the page - correct typing for metadata function
 export async function generateMetadata({
   params,
 }: CasePageProps): Promise<Metadata> {
@@ -40,8 +40,9 @@ export function generateStaticParams() {
   }));
 }
 
+// Page component - params is directly accessible, not a Promise
 export default function CasePage({ params }: CasePageProps) {
-  // Get the first segment of the slug (we use [...slug] to capture all segments)
+  // Get the first segment of the slug
   const slug = params.slug[0];
 
   // Check if the case exists
