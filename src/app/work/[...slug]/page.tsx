@@ -4,17 +4,20 @@ import { cases } from "@/data/caseData";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
 
-// Define props type
-interface CasePageProps {
-  params: {
-    slug: string[];
-  };
-}
+// Updated to reflect Next.js 15 prop types
+type PageProps = {
+  params: Promise<{ slug: string[] }>;
+};
 
-// Generate metadata for the page - correct typing for metadata function
+// Define props type for metadata generation
+type MetadataProps = {
+  params: { slug: string[] };
+};
+
+// Generate metadata for the page
 export async function generateMetadata({
   params,
-}: CasePageProps): Promise<Metadata> {
+}: MetadataProps): Promise<Metadata> {
   const slug = params.slug[0];
   const caseItem = cases.find((c) => c.slug === slug);
 
@@ -40,10 +43,12 @@ export function generateStaticParams() {
   }));
 }
 
-// Page component - params is directly accessible, not a Promise
-export default function CasePage({ params }: CasePageProps) {
+// Page component - handling the Promise params
+export default async function CasePage({ params }: PageProps) {
+  // Resolve the params Promise
+  const resolvedParams = await params;
   // Get the first segment of the slug
-  const slug = params.slug[0];
+  const slug = resolvedParams.slug[0];
 
   // Check if the case exists
   const caseExists = cases.some((c) => c.slug === slug);
