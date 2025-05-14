@@ -48,7 +48,6 @@ export function generateStaticParams() {
 export default async function CasePage({ params, searchParams }: PageProps) {
   // Resolve the params Promise
   const { slug } = await params;
-  const resolvedSearchParams = await searchParams;
 
   // Get the first segment of the slug
   const caseSlug = slug[0];
