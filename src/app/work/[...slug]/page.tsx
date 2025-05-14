@@ -2,24 +2,22 @@ import SideMenu from "@/components/SideMenu";
 import SingleCase from "@/components/SingleCase";
 import { cases } from "@/data/caseData";
 import { notFound } from "next/navigation";
-import { Metadata } from "next";
+import type { Metadata, ResolvingMetadata } from "next";
 
-// Updated to reflect Next.js 15 prop types
+// Define the props for the page component
 type PageProps = {
   params: Promise<{ slug: string[] }>;
-};
-
-// Define props type for metadata generation
-type MetadataProps = {
-  params: { slug: string[] };
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 };
 
 // Generate metadata for the page
-export async function generateMetadata({
-  params,
-}: MetadataProps): Promise<Metadata> {
-  const slug = params.slug[0];
-  const caseItem = cases.find((c) => c.slug === slug);
+export async function generateMetadata(
+  { params }: { params: Promise<{ slug: string[] }> },
+  parent: ResolvingMetadata
+): Promise<Metadata> {
+  // Resolve the params promise to get the slug
+  const { slug } = await params;
+  const caseItem = cases.find((c) => c.slug === slug[0]);
 
   if (!caseItem) {
     return {
@@ -27,11 +25,14 @@ export async function generateMetadata({
     };
   }
 
+  // Optionally access and extend parent metadata
+  const previousImages = (await parent).openGraph?.images || [];
+
   return {
     title: `${caseItem.title} | Portfolio`,
     description: caseItem.description,
     openGraph: {
-      images: [caseItem.imagePath],
+      images: [caseItem.imagePath, ...previousImages],
     },
   };
 }
@@ -44,14 +45,16 @@ export function generateStaticParams() {
 }
 
 // Page component - handling the Promise params
-export default async function CasePage({ params }: PageProps) {
+export default async function CasePage({ params, searchParams }: PageProps) {
   // Resolve the params Promise
-  const resolvedParams = await params;
+  const { slug } = await params;
+  const resolvedSearchParams = await searchParams;
+
   // Get the first segment of the slug
-  const slug = resolvedParams.slug[0];
+  const caseSlug = slug[0];
 
   // Check if the case exists
-  const caseExists = cases.some((c) => c.slug === slug);
+  const caseExists = cases.some((c) => c.slug === caseSlug);
   if (!caseExists) {
     notFound();
   }
@@ -63,7 +66,7 @@ export default async function CasePage({ params }: PageProps) {
           <SideMenu />
         </div>
         <div className="order-1 md:order-2 col-span-full md:col-span-8 2xl:col-span-10 h-full">
-          <SingleCase slug={slug} />
+          <SingleCase slug={caseSlug} />
         </div>
       </main>
     </div>
