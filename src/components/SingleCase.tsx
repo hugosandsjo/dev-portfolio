@@ -47,7 +47,12 @@ export default function SingleCase({ slug }: SingleCaseProps) {
 
   return (
     <section className="col-span-full md:col-span-8 2xl:col-span-10 flex flex-col gap-4">
-      <h2 className="text-2xl font-semibold">{caseItem.title}</h2>
+      <div className="flex justify-between">
+        <Link href={`/`} className="text-2xl font-semibold">
+          Back
+        </Link>
+        <h2 className="text-2xl font-semibold">{caseItem.title}</h2>
+      </div>
       <hr className="border-t-2 border-black" />
 
       <div className="grid grid-cols-1 2xl:grid-cols-2 gap-8">
