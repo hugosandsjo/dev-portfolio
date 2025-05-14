@@ -7,17 +7,62 @@ export default async function SingleCase({}) {
       <hr className="border-t-2 border-black" />
 
       <div className="grid grid-cols-1 2xl:grid-cols-2 gap-8">
-        <div className="relative aspect-4/5 w-full">
-          <Image
-            src={"/dumkeramik/dumkeramik.png"}
-            alt="Image"
-            fill
-            className="object-cover absolute object-center"
-            priority
-          />
+        {/* Left column with all images */}
+        <div className="flex flex-col gap-8">
+          <div className="relative aspect-4/5 w-full">
+            <Image
+              src={"/dumkeramik/dumkeramik.png"}
+              alt="Image"
+              fill
+              className="object-cover absolute object-center"
+              priority
+            />
+          </div>
+
+          <div className="relative aspect-4/5 w-full">
+            <Image
+              src={"/dumkeramik/dumkeramik.png"}
+              alt="Image"
+              fill
+              className="object-cover absolute object-center"
+              priority
+            />
+          </div>
+
+          <div className="relative aspect-4/5 w-full">
+            <Image
+              src={"/dumkeramik/dumkeramik.png"}
+              alt="Image"
+              fill
+              className="object-cover absolute object-center"
+              priority
+            />
+          </div>
+
+          <div className="relative aspect-4/5 w-full">
+            <Image
+              src={"/dumkeramik/dumkeramik.png"}
+              alt="Image"
+              fill
+              className="object-cover absolute object-center"
+              priority
+            />
+          </div>
+
+          <div className="relative aspect-4/5 w-full">
+            <Image
+              src={"/dumkeramik/dumkeramik.png"}
+              alt="Image"
+              fill
+              className="object-cover absolute object-center"
+              priority
+            />
+          </div>
         </div>
+
+        {/* Right column with sticky text */}
         <div
-          className="w-full flex flex-col sticky top-5 h-fit  gap-4"
+          className="w-full flex flex-col sticky top-5 h-fit gap-4"
           data-lenis-prevent
         >
           <h2 className="text-3xl font-semibold">Full koll!</h2>
@@ -28,69 +73,6 @@ export default async function SingleCase({}) {
             boundaries around alcohol and drugs and the importance of talking
             about the subject.
           </p>
-        </div>
-        {/* <div className="w-full flex flex-col sticky top-0 gap-4">
-          <h2 className="text-3xl font-semibold">Full koll!</h2>
-          <p>
-            Together with Gullersgrupp, I developed a set of illustrations and
-            visual identity for the County Administrative Board and the Full
-            Koll campaign. Intended to inform teenage parents about setting
-            boundaries around alcohol and drugs and the importance of talking
-            about the subject.
-          </p>
-        </div> */}
-      </div>
-      {/* <div className="h-[400px] border flex ga-4">
-        <div className="h-full w-[320px] border"></div>
-        <div className="h-full w-[320px] border"></div>
-        <div className="h-full w-[320px] border"></div>
-      </div> */}
-
-      <div className="grid grid-cols-1 2xl:grid-cols-2 gap-8">
-        <div className="relative h-[800px] w-full">
-          <Image
-            src={"/dumkeramik/dumkeramik.png"}
-            alt="Image"
-            fill
-            className="object-cover absolute object-center"
-            priority
-          />
-        </div>
-      </div>
-
-      <div className="grid grid-cols-1 2xl:grid-cols-2 gap-8">
-        <div className="relative h-[800px] w-full">
-          <Image
-            src={"/dumkeramik/dumkeramik.png"}
-            alt="Image"
-            fill
-            className="object-cover absolute object-center"
-            priority
-          />
-        </div>
-      </div>
-
-      <div className="grid grid-cols-1 2xl:grid-cols-2 gap-8">
-        <div className="relative h-[800px] w-full">
-          <Image
-            src={"/dumkeramik/dumkeramik.png"}
-            alt="Image"
-            fill
-            className="object-cover absolute object-center"
-            priority
-          />
-        </div>
-      </div>
-
-      <div className="grid grid-cols-1 2xl:grid-cols-2 gap-8">
-        <div className="relative h-[800px] w-full">
-          <Image
-            src={"/dumkeramik/dumkeramik.png"}
-            alt="Image"
-            fill
-            className="object-cover absolute object-center"
-            priority
-          />
         </div>
       </div>
     </section>
