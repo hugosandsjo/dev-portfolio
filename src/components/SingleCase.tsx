@@ -57,7 +57,7 @@ export default function SingleCase({ slug }: SingleCaseProps) {
 
       <div className="grid grid-cols-1 2xl:grid-cols-2 gap-8">
         {/* Left column with all images */}
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-8 order-2 2xl:order-1">
           {/* Main image */}
           <div className="relative aspect-4/5 w-full">
             <Image
@@ -93,8 +93,13 @@ export default function SingleCase({ slug }: SingleCaseProps) {
         </div>
 
         {/* Right column with sticky text */}
-        <div className="w-full flex flex-col justify-between sticky top-5 h-fit overflow-y-auto gap-4 ">
-          <h2 className="text-3xl font-semibold">{caseItem.title}</h2>
+        <div className="w-full flex flex-col justify-between sticky top-0 py-5 h-fit overflow-y-auto 2xl:px-5 gap-4 order-1 2xl:order-2 bg-gray-200">
+          <div className="flex justify-between gap-2">
+            <h2 className="text-3xl font-semibold">{caseItem.title}</h2>
+            <Link href={`/`}>
+              <h3 className="text-2xl font-semibold">{"<"}</h3>
+            </Link>
+          </div>
           <div className="text-md opacity-60 font-regular italic mb-2">
             {caseItem.category}
           </div>
@@ -113,12 +118,6 @@ export default function SingleCase({ slug }: SingleCaseProps) {
               {caseItem.website}
             </a>
           )}
-          <div>
-            {" "}
-            <Link href={`/`}>
-              <h3 className="text-2xl font-semibold">Back to cases</h3>
-            </Link>
-          </div>
         </div>
       </div>
     </section>
