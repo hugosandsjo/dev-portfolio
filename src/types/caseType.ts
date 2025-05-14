@@ -6,4 +6,7 @@ export type Case = {
   description?: string;
   imagePath: string;
   additionalImages?: string[];
+  aspectRatio: "16/10" | "1/1";
+  website?: string;
+  url?: string;
 };
