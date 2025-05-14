@@ -81,13 +81,13 @@ export default function SingleCase({ slug }: SingleCaseProps) {
 
   return (
     <section className="col-span-full md:col-span-8 2xl:col-span-10 flex flex-col gap-4">
-      <div className="flex justify-between sticky bg-gray-200 py-5 z-10 top-0">
+      <div className="flex justify-between sticky bg-gray-200 z-10 top-0">
         <Link href={`/`}>
           <h3 className="text-2xl font-semibold">{"<"}</h3>
         </Link>
         <h2 className="text-2xl font-semibold">{caseItem.title}</h2>
       </div>
-      <hr className="border-t-2 z-30 border-black -translate-y-4.5" />
+      <hr className="border-t-2 border-black" />
       <div className="grid grid-cols-1 2xl:grid-cols-2 gap-8">
         {/* Left column with all images */}
         <div className="flex flex-col gap-8 order-2 2xl:order-1">
