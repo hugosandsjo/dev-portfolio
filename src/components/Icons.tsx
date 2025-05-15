@@ -2,7 +2,7 @@ import React from "react";
 
 export type IconProps = React.HTMLAttributes<SVGElement>;
 
-export const ArrowRightIcon = (props: IconProps) => (
+export const ArrowLeftIcon = (props: IconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 -960 960 960"

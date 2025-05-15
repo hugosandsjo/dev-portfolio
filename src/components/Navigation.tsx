@@ -1,6 +1,20 @@
+"use client";
+
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 export default function Navigation() {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const titles = ["Code!", "Design!", "Motion!"];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex((current) => (current + 1) % titles.length);
+    }, 2500); // Change every 3 seconds
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <nav className="flex gap-4 w-full justify-between items-center py-8 px-10 md:px-20 bg-gray-200">
       <Link href={"/"} className="w-10 h-10">
@@ -18,8 +32,17 @@ export default function Navigation() {
         </svg>
       </Link>
 
-      <div>
-        <h2 className="text-3xl font-semibold">Code!</h2>
+      <div className="relative w-60 h-20 overflow-hidden">
+        {titles.map((title, index) => (
+          <h2
+            key={title}
+            className={`absolute text-6xl font-semibold w-full text-center transition-opacity duration-300 ${
+              index === activeIndex ? "opacity-100" : "opacity-0"
+            }`}
+          >
+            {title}
+          </h2>
+        ))}
       </div>
     </nav>
   );
