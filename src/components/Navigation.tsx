@@ -17,7 +17,7 @@ export default function Navigation() {
 
   return (
     <nav className="flex gap-4 w-full justify-between items-center py-8 px-10 md:px-20 bg-gray-200">
-      <Link href={"/"} className="w-10 h-10">
+      <Link href={"/"} className="w-10 h-10 lg:w-20 lg:h-20">
         <svg
           width="100%"
           height="100%"
@@ -36,7 +36,7 @@ export default function Navigation() {
         {titles.map((title, index) => (
           <h2
             key={title}
-            className={`absolute text-6xl font-semibold w-full text-center transition-opacity duration-300 ${
+            className={`absolute text-4xl lg:text-6xl font-semibold w-full text-center transition-opacity duration-300 ${
               index === activeIndex ? "opacity-100" : "opacity-0"
             }`}
           >

@@ -6,9 +6,8 @@ import { useState } from "react";
 export default function SideMenu() {
   // State to track which sections are open
   const [openSections, setOpenSections] = useState({
-    about: false,
-    cv: false,
-    contact: false,
+    about: true,
+    cv: true,
   });
 
   // Function to toggle each section

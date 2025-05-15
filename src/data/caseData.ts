@@ -21,7 +21,6 @@ export const cases: Case[] = [
       "/fullkoll/mobile_01.jpg",
       "/fullkoll/mobile_02.jpg",
       "/fullkoll/mobile_03.jpg",
-      // Add more images when available
     ],
     aspectRatio: "4/5",
   },
@@ -32,12 +31,11 @@ export const cases: Case[] = [
     description:
       "A web development project focused on creating an online presence for a ceramic arts studio, showcasing their work and design philosophy.",
     imagePath: "/dumkeramik/dumkeramik_logo.svg",
-    category: "Web Development",
+    category: "Code",
     additionalImages: [
       "/dumkeramik/dumkeramik_01.png",
       "/dumkeramik/dumkeramik_02.png",
       "/dumkeramik/dumkeramik_03.png",
-      // Add more images when available
     ],
     aspectRatio: "16/10",
     website: "dumkeramik.se",
@@ -50,11 +48,19 @@ export const cases: Case[] = [
     description:
       "A collection of motion graphics and animations showcasing various techniques and styles for different contexts.",
     imagePath: "/reel/Instagram_birdandgirl.gif",
-    category: "Animation",
-    additionalImages: [
-      "/reel/Instagram_birdandgirl.gif",
-      // Add more images when available
-    ],
+    category: "Motion",
+    additionalImages: ["/reel/Instagram_birdandgirl.gif"],
+    aspectRatio: "16/10",
+  },
+  {
+    id: 4,
+    title: "Axén Petersen Finsnickeri",
+    slug: "oscaraxen",
+    description:
+      "A web development project focused on creating an online presence for a ceramic arts studio, showcasing their work and design philosophy.",
+    imagePath: "/axenpetersen/axenpetersen_gif_small.gif",
+    category: "Code, Design",
+    additionalImages: ["/axenpetersen/axenpetersen_01.png"],
     aspectRatio: "16/10",
   },
 ];
