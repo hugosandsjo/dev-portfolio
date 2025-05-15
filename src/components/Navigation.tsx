@@ -32,11 +32,11 @@ export default function Navigation() {
         </svg>
       </Link>
 
-      <div className="relative flex justify-center items-center w-60 h-20 overflow-hidden">
+      <div className="relative flex justify-end items-center w-60 h-20 overflow-hidden">
         {titles.map((title, index) => (
           <h2
             key={title}
-            className={`absolute text-4xl lg:text-6xl font-semibold w-full text-center transition-opacity duration-300 ${
+            className={`absolute text-4xl lg:text-6xl font-semibold w-full text-right transition-opacity duration-300 ${
               index === activeIndex ? "opacity-100" : "opacity-0"
             }`}
           >
