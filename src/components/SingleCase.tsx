@@ -49,7 +49,7 @@ export default function SingleCase({ slug }: SingleCaseProps) {
       <div className="flex sticky flex-col pt-5 gap-4 bg-gray-200 top-0 z-10">
         <div className="flex justify-between">
           <Link href={`/`}>
-            <ArrowRightIcon className="w-8 h-8" />
+            <ArrowRightIcon className="w-8 h-8 hover:opacity-60" />
           </Link>
           <h2 className="text-2xl font-semibold">{caseItem.title}</h2>
         </div>
@@ -94,25 +94,26 @@ export default function SingleCase({ slug }: SingleCaseProps) {
         </div>
 
         {/* Right column with sticky text */}
-
-        <div className="text-md font-regular italic mb-2">
-          {caseItem.category}
+        <div className="flex flex-col h-fit gap-8 order-1 2xl:order-2 2xl:sticky 2xl:top-22">
+          <div className="text-md font-regular italic mb-2">
+            {caseItem.category}
+          </div>
+          {caseItem.description && (
+            <p className="text-md leading-[1.5] font-light">
+              {caseItem.description}
+            </p>
+          )}
+          {caseItem.website && (
+            <a
+              href={caseItem.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline underline-offset-1"
+            >
+              {caseItem.website}
+            </a>
+          )}
         </div>
-        {caseItem.description && (
-          <p className="text-md leading-[1.5] font-light">
-            {caseItem.description}
-          </p>
-        )}
-        {caseItem.website && (
-          <a
-            href={caseItem.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline underline-offset-1"
-          >
-            {caseItem.website}
-          </a>
-        )}
       </div>
     </section>
   );
