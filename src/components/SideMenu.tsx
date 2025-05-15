@@ -12,7 +12,7 @@ export default function SideMenu() {
   });
 
   // Function to toggle each section
-  const toggleSection = (section: "about" | "cv" | "contact") => {
+  const toggleSection = (section: "about" | "cv") => {
     setOpenSections((prev) => ({
       ...prev,
       [section]: !prev[section],
