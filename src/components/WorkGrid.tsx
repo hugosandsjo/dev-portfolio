@@ -18,7 +18,7 @@ export default function WorkGrid() {
           <Link
             key={caseItem.id}
             href={`/work/${caseItem.slug}`}
-            className="flex flex-col gap-2 fade-div cursor-pointer group"
+            className="flex flex-col gap-3 fade-div cursor-pointer group"
           >
             <div className="relative aspect-square sm:aspect-4/5 w-full">
               <Image
@@ -37,12 +37,12 @@ export default function WorkGrid() {
               <h3 className="text-md opacity-60 font-regular italic">
                 {caseItem.category}
               </h3>
+              {caseItem.description && (
+                <p className="text-md leading-[1.5] font-light">
+                  {caseItem.description}
+                </p>
+              )}
             </div>
-            {caseItem.description && (
-              <p className="text-md leading-[1.5] font-light">
-                {caseItem.description}
-              </p>
-            )}
           </Link>
         ))}
       </div>

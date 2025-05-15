@@ -113,7 +113,7 @@ export default function SingleCase({ slug }: SingleCaseProps) {
               href={caseItem.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="underline underline-offset-1"
+              className="underline underline-offset-2"
             >
               {caseItem.website}
             </a>
