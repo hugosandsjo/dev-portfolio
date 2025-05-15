@@ -5,7 +5,7 @@ import { cases } from "@/data/caseData";
 import { notFound } from "next/navigation";
 import { useEffect } from "react";
 import Link from "next/link";
-import { ArrowRightIcon } from "@/components/Icons";
+import { ArrowLeftIcon } from "@/components/Icons";
 
 interface SingleCaseProps {
   slug: string;
@@ -48,8 +48,8 @@ export default function SingleCase({ slug }: SingleCaseProps) {
     <section className="col-span-full md:col-span-8 2xl:col-span-10 flex flex-col gap-4">
       <div className="flex sticky flex-col pt-5 gap-4 bg-gray-200 top-0 z-10">
         <div className="flex justify-between">
-          <Link href={`/`}>
-            <ArrowRightIcon className="w-8 h-8 hover:opacity-60" />
+          <Link href={`/`} className=" hover:opacity-60">
+            <ArrowLeftIcon className="w-8 h-8 text-white" />
           </Link>
           <h2 className="text-2xl font-semibold opacity-100 2xl:opacity-0">
             {caseItem.title}
@@ -96,15 +96,15 @@ export default function SingleCase({ slug }: SingleCaseProps) {
         </div>
 
         {/* Right column with sticky text */}
-        <div className="flex flex-col h-fit gap-4 order-1 2xl:order-2 2xl:sticky 2xl:top-22">
-          <div className="flex flex-col gap-2">
-            <h2 className="text-4xl font-semibold">{caseItem.title}</h2>
+        <div className="flex flex-col h-fit gap-4 order-1 2xl:order-2 2xl:sticky 2xl:top-22 2xl:px-16 2xl:py-10">
+          <div className="flex flex-col gap-4">
+            <h2 className="text-6xl font-semibold">{caseItem.title}</h2>
             <div className="text-md font-regular italic">
               {caseItem.category}
             </div>
           </div>
           {caseItem.description && (
-            <p className="text-md leading-[1.5] font-light">
+            <p className="text-md leading-[1.5] font-light max-w-[560px]">
               {caseItem.description}
             </p>
           )}
@@ -113,7 +113,7 @@ export default function SingleCase({ slug }: SingleCaseProps) {
               href={caseItem.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="underline underline-offset-1"
+              className="underline underline-offset-2"
             >
               {caseItem.website}
             </a>

@@ -6,13 +6,12 @@ import { useState } from "react";
 export default function SideMenu() {
   // State to track which sections are open
   const [openSections, setOpenSections] = useState({
-    about: false,
-    cv: false,
-    contact: false,
+    about: true,
+    cv: true,
   });
 
   // Function to toggle each section
-  const toggleSection = (section: "about" | "cv" | "contact") => {
+  const toggleSection = (section: "about" | "cv") => {
     setOpenSections((prev) => ({
       ...prev,
       [section]: !prev[section],
@@ -28,7 +27,7 @@ export default function SideMenu() {
         >
           <h1 className="text-2xl font-semibold">About</h1>
           <ChevrownRightIcon
-            className={`w-8 h-8 transition-transform duration-300 ${
+            className={`w-8 h-8 transition-transform duration-150 ${
               openSections.about ? "rotate-90" : ""
             }`}
           />
