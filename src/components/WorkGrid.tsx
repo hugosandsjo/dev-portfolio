@@ -6,8 +6,17 @@ import { cases } from "@/data/caseData";
 export default function WorkGrid() {
   return (
     <section className="col-span-full md:col-span-8 2xl:col-span-10 flex flex-col gap-4">
-      <h1 className="text-2xl font-semibold">Work</h1>
-      <hr className="border-t-2 border-black" />
+      {/* <h1 className="text-2xl font-semibold">Work</h1>
+      <hr className="border-t-2 border-black" /> */}
+      <div className="flex sticky flex-col pt-5 gap-4 bg-gray-200 top-0 z-10">
+        <div className="flex justify-between">
+          {/* <Link href={`/`}>
+            <ArrowRightIcon className="w-8 h-8" />
+          </Link> */}
+          <h2 className="text-2xl font-semibold">Work</h2>
+        </div>
+        <hr className="border-t-2 border-black z-20 w-full" />
+      </div>
       <div className="grid sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-5 gap-8">
         {cases.map((caseItem) => (
           <Link

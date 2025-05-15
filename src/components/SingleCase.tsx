@@ -5,6 +5,7 @@ import { cases } from "@/data/caseData";
 import { notFound } from "next/navigation";
 import { useEffect } from "react";
 import Link from "next/link";
+import { ArrowRightIcon } from "@/components/Icons";
 
 interface SingleCaseProps {
   slug: string;
@@ -48,7 +49,7 @@ export default function SingleCase({ slug }: SingleCaseProps) {
       <div className="flex sticky flex-col pt-5 gap-4 bg-gray-200 top-0 z-10">
         <div className="flex justify-between">
           <Link href={`/`}>
-            <h3 className="text-2xl font-semibold">{"<"}</h3>
+            <ArrowRightIcon className="w-8 h-8" />
           </Link>
           <h2 className="text-2xl font-semibold">{caseItem.title}</h2>
         </div>
