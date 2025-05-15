@@ -6,7 +6,7 @@ export default function SideMenu() {
       <div className="flex flex-col pt-5 bg-gray-200 gap-4">
         <div className=" flex justify-between items-center">
           <h1 className="text-2xl font-semibold">About</h1>
-          <ChevrownRightIcon className="w-8 h-8" />
+          <ChevrownRightIcon className="w-8 h-8 rotate-90" />
         </div>
         <hr className="border-t-2 border-black" />
         <p className="text-md leading-[1.5] font-light">
@@ -19,7 +19,7 @@ export default function SideMenu() {
       <div className="flex flex-col gap-4">
         <div className=" flex justify-between items-center">
           <h1 className="text-2xl font-semibold">CV</h1>
-          <ChevrownRightIcon className="w-8 h-8" />
+          <ChevrownRightIcon className="w-8 h-8 rotate-90" />
         </div>
         <hr className="border-t-2 border-black" />
         <div className="flex flex-col gap-1">
