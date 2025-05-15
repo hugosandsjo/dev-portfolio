@@ -104,7 +104,7 @@ export default function SingleCase({ slug }: SingleCaseProps) {
             </div>
           </div>
           {caseItem.description && (
-            <p className="text-md leading-[1.5] font-light">
+            <p className="text-md leading-[1.5] font-light max-w-[560px]">
               {caseItem.description}
             </p>
           )}
