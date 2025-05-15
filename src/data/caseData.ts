@@ -6,7 +6,7 @@ export const cases: Case[] = [
     title: "Full koll",
     slug: "fullkoll",
     description:
-      "Together with Gullersgrupp, I developed a set of illustrations and visual identity for the County Administrative Board and the Full Koll campaign. Intended to inform teenage parents about setting boundaries around alcohol and drugs and the importance of talking about the subject.",
+      "A web development project focused on creating an online presence for a ceramic arts studio, showcasing their work and design philosophy.",
     imagePath: "/fullkoll/fullkoll_main.jpg",
     category: "Illustration",
     additionalImages: [

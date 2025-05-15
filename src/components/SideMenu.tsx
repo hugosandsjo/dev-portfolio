@@ -28,7 +28,7 @@ export default function SideMenu() {
         >
           <h1 className="text-2xl font-semibold">About</h1>
           <ChevrownRightIcon
-            className={`w-8 h-8 transition-transform duration-300 ${
+            className={`w-8 h-8 transition-transform duration-150 ${
               openSections.about ? "rotate-90" : ""
             }`}
           />

@@ -96,7 +96,7 @@ export default function SingleCase({ slug }: SingleCaseProps) {
         </div>
 
         {/* Right column with sticky text */}
-        <div className="flex flex-col h-fit gap-4 order-1 2xl:order-2 2xl:sticky 2xl:top-22">
+        <div className="flex flex-col h-fit gap-4 order-1 2xl:order-2 2xl:sticky 2xl:top-22 2xl:p-16">
           <div className="flex flex-col gap-2">
             <h2 className="text-4xl font-semibold">{caseItem.title}</h2>
             <div className="text-md font-regular italic">
