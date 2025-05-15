@@ -32,7 +32,7 @@ export default function Navigation() {
         </svg>
       </Link>
 
-      <div className="relative flex justify-center items-baseline w-60 h-20 overflow-hidden">
+      <div className="relative flex justify-center items-center w-60 h-20 overflow-hidden">
         {titles.map((title, index) => (
           <h2
             key={title}
