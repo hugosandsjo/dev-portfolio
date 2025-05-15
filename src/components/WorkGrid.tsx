@@ -7,7 +7,7 @@ import { ArrowOutwardIcon } from "@/components/Icons";
 export default function WorkGrid() {
   return (
     <section className="col-span-full md:col-span-8 2xl:col-span-10 flex flex-col gap-4">
-      <div className="flex sticky flex-col pt-5 gap-4 bg-gray-200 top-0 z-10">
+      <div className="flex sticky flex-col pt-5 gap-2 bg-gray-200 top-0 z-10">
         <div className="flex justify-between">
           <h2 className="text-2xl font-semibold">Work</h2>
         </div>
