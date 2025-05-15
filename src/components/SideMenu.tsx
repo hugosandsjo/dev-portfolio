@@ -1,8 +1,13 @@
+import { ChevrownRightIcon } from "@/components/Icons";
+
 export default function SideMenu() {
   return (
     <section className="flex flex-col gap-8 sticky top-0 h-fit ">
       <div className="flex flex-col pt-5 bg-gray-200 gap-4">
-        <h1 className="text-2xl font-semibold">About</h1>
+        <div className=" flex justify-between items-center">
+          <h1 className="text-2xl font-semibold">About</h1>
+          <ChevrownRightIcon className="w-8 h-8" />
+        </div>
         <hr className="border-t-2 border-black" />
         <p className="text-md leading-[1.5] font-light">
           With a background in arts and crafts i bring my knowledge in classic
@@ -12,7 +17,10 @@ export default function SideMenu() {
         </p>
       </div>
       <div className="flex flex-col gap-4">
-        <h1 className="text-2xl font-semibold">Education</h1>
+        <div className=" flex justify-between items-center">
+          <h1 className="text-2xl font-semibold">CV</h1>
+          <ChevrownRightIcon className="w-8 h-8" />
+        </div>
         <hr className="border-t-2 border-black" />
         <div className="flex flex-col gap-1">
           <h4 className="text-xl font-medium">YRGO</h4>
