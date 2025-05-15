@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { cases } from "@/data/caseData";
 import { notFound } from "next/navigation";
-import { useEffect, useState, useRef } from "react";
+import { useEffect } from "react";
 import Link from "next/link";
 
 interface SingleCaseProps {
@@ -45,13 +45,16 @@ export default function SingleCase({ slug }: SingleCaseProps) {
 
   return (
     <section className="col-span-full md:col-span-8 2xl:col-span-10 flex flex-col gap-4">
-      <div className="flex justify-between sticky bg-gray-200  top-0 z-10">
-        <Link href={`/`}>
-          <h3 className="text-2xl font-semibold">{"<"}</h3>
-        </Link>
-        <h2 className="text-2xl font-semibold">{caseItem.title}</h2>
+      <div className="flex sticky flex-col pt-5 gap-4 bg-gray-200 top-0 z-10">
+        <div className="flex justify-between">
+          <Link href={`/`}>
+            <h3 className="text-2xl font-semibold">{"<"}</h3>
+          </Link>
+          <h2 className="text-2xl font-semibold">{caseItem.title}</h2>
+        </div>
+        <hr className="border-t-2 border-black z-20 w-full" />
       </div>
-      <hr className="border-t-2 border-black z-20" />
+
       <div className="grid grid-cols-1 2xl:grid-cols-2 gap-8">
         {/* Left column with all images */}
         <div className="flex flex-col gap-8 order-2 2xl:order-1">
