@@ -51,7 +51,9 @@ export default function SingleCase({ slug }: SingleCaseProps) {
           <Link href={`/`}>
             <ArrowRightIcon className="w-8 h-8 hover:opacity-60" />
           </Link>
-          <h2 className="text-2xl font-semibold">{caseItem.title}</h2>
+          <h2 className="text-2xl font-semibold opacity-100 2xl:opacity-0">
+            {caseItem.title}
+          </h2>
         </div>
         <hr className="border-t-2 border-black z-20 w-full" />
       </div>
@@ -94,9 +96,12 @@ export default function SingleCase({ slug }: SingleCaseProps) {
         </div>
 
         {/* Right column with sticky text */}
-        <div className="flex flex-col h-fit gap-8 order-1 2xl:order-2 2xl:sticky 2xl:top-22">
-          <div className="text-md font-regular italic mb-2">
-            {caseItem.category}
+        <div className="flex flex-col h-fit gap-4 order-1 2xl:order-2 2xl:sticky 2xl:top-22">
+          <div className="flex flex-col gap-2">
+            <h2 className="text-4xl font-semibold">{caseItem.title}</h2>
+            <div className="text-md font-regular italic">
+              {caseItem.category}
+            </div>
           </div>
           {caseItem.description && (
             <p className="text-md leading-[1.5] font-light">
