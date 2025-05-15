@@ -15,7 +15,7 @@ export default function SideMenu() {
             className="flex justify-between items-center cursor-pointer"
             onClick={() => toggleSection("about")}
           >
-            <h1 className="text-2xl font-semibold">About</h1>
+            <h2 className="text-2xl font-semibold">About</h2>
             <ChevrownRightIcon
               className={`w-8 h-8 transition-transform duration-150 ${
                 openSections.about ? "rotate-90" : ""
@@ -39,7 +39,7 @@ export default function SideMenu() {
             className="flex justify-between items-center cursor-pointer"
             onClick={() => toggleSection("cv")}
           >
-            <h1 className="text-2xl font-semibold">CV</h1>
+            <h2 className="text-2xl font-semibold">CV</h2>
             <ChevrownRightIcon
               className={`w-8 h-8 transition-transform duration-300 ${
                 openSections.cv ? "rotate-90" : ""
@@ -49,7 +49,16 @@ export default function SideMenu() {
           <hr className="border-t-2 border-black" />
         </div>
         {openSections.cv && (
-          <>
+          <section className="flex flex-col gap-4">
+            <div className="flex flex-col gap-1">
+              <h4 className="text-xl font-medium">Enskild firma</h4>
+              <div className="flex justify-between">
+                <h5 className="text-md font-light">2020 –</h5>
+              </div>
+            </div>
+            <h2 className="underline underline-offset-3 font-semibold">
+              Education
+            </h2>
             <div className="flex flex-col gap-1">
               <h4 className="text-xl font-medium">YRGO</h4>
               <div className="flex justify-between">
@@ -70,14 +79,16 @@ export default function SideMenu() {
                 <h5 className="text-md font-light">Animation bootcamp</h5>
               </div>
             </div>
-          </>
+          </section>
         )}
       </div>
       <div className="flex flex-col gap-4">
-        <div className="flex flex-col gap-1">
-          <h3 className="text-lg font-regular">hugosandsjo@gmail.com</h3>
-          <h3 className="text-lg font-regular">0707224289</h3>
-          <h3 className="text-lg font-regular">Instagram</h3>
+        <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-1">
+            <h3 className="text-lg font-regular">hugosandsjo@gmail.com</h3>
+            <h3 className="text-lg font-regular">0707224289</h3>
+            <h3 className="text-lg font-regular">Instagram</h3>
+          </div>
         </div>
       </div>
     </section>
