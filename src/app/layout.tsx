@@ -3,6 +3,7 @@ import { Inter, Outfit } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 import { ReactLenis } from "@/utils/lenis";
+import { SideMenuProvider } from "@/context/SideMenuContext";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -30,8 +31,10 @@ export default function RootLayout({
     <html lang="en">
       <ReactLenis root>
         <body className={`${outfit.className} ${inter.className} antialiased`}>
-          <Navigation />
-          {children}
+          <SideMenuProvider>
+            <Navigation />
+            {children}
+          </SideMenuProvider>
         </body>
       </ReactLenis>
     </html>

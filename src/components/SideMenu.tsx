@@ -1,22 +1,11 @@
 "use client";
 
 import { ChevrownRightIcon } from "@/components/Icons";
-import { useState } from "react";
+import { useSideMenu } from "@/context/SideMenuContext";
 
 export default function SideMenu() {
-  // State to track which sections are open
-  const [openSections, setOpenSections] = useState({
-    about: true,
-    cv: true,
-  });
-
-  // Function to toggle each section
-  const toggleSection = (section: "about" | "cv") => {
-    setOpenSections((prev) => ({
-      ...prev,
-      [section]: !prev[section],
-    }));
-  };
+  // Use the side menu context instead of local state
+  const { openSections, toggleSection } = useSideMenu();
 
   return (
     <section className="flex flex-col gap-8 sticky top-0 h-fit">
