@@ -15,7 +15,7 @@ type SideMenuContextType = {
 const SideMenuContext = createContext<SideMenuContextType>({
   openSections: {
     about: true,
-    cv: true,
+    cv: false,
   },
   toggleSection: () => {},
 });
@@ -25,7 +25,7 @@ export function SideMenuProvider({ children }: { children: ReactNode }) {
   // State to track which sections are open
   const [openSections, setOpenSections] = useState({
     about: true,
-    cv: true,
+    cv: false,
   });
 
   // Function to toggle each section
