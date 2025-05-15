@@ -23,6 +23,8 @@ export const cases: Case[] = [
       "/fullkoll/mobile_03.jpg",
     ],
     aspectRatio: "4/5",
+    website: "fullkoll.nu",
+    url: "https://fullkoll.nu/",
   },
   {
     id: 2,
@@ -51,6 +53,8 @@ export const cases: Case[] = [
     category: "Motion",
     additionalImages: ["/reel/Instagram_birdandgirl.gif"],
     aspectRatio: "16/10",
+    website: "vimeo.com",
+    url: "https://vimeo.com/786541367?turnstile=0.R6OEVGmIGahAADgdHNvZIcdEPABBMGGodUCh6d_U_csLkh0YH-PNufN41zTawqlSd5qOO9Jz7z7dbEtI41glh4RJ57UpRuI21VQnVZYVsdq0QnqRKHcpiGDjBBOHZg1H12WiE82yv2ouAvjy_VAB_DpLdUVvw-eq5MolUbjURX0Y3pWZOBMydXvL1F5zrc-7p38q6fene03J7pJX72U5OmFGxBB6FqBpuRImvRS93RQ6ZoiD6yAXiGzjI6ZNDvJ-AEKGo8nLj-nNozacpazrpJMW1PVhJtxY_oEF8BPxoMNkq_h5sm-mDDD5Yr1h5XLxCPxpHRr890dipaBk3jrLWGXjh9l6YvL4bgIs9zEXuWXGzgmazzVhTvR49-ax3Fz-7BmihGjcdoL1nrLfFAKH4A75zaInQOyUGDWVSQXMZft_P8wajEeHlSeY9NM0RuYxN-tCHitNOTM1GfEwy9-XqO0MD1PsFPMEk3ji6gKVj5woNZs8slhcUN7LmRMEAHxHLp9d665eYvfX7FM8pMGfeJQEIHv6679MJawewGvccp_KQKADYdoqHv-UbwAECHSvizctCsD4tndAet10qyXSRGwGjLE1-4vNATY03_XM3hSVXp4N0c2i58_Tl-SQ0hItaQDs_uBk1VCKoWOTyERY4PEFNfyQy3PjrdSVLe36t8hr7XoYUrfcqpPVd6QpBloSu7QmxsVZjDfV-1oko6CCVCMd7kKW_b-JXM1awF7XHBObpXUtpV1X3_vBipN2jXS-smguUswTkXTl4ll2ujewWzhRSLArDgyL_IB-djiWDCTmNsC7EJrWTkAxv32VxUzTC8kZggaWmIiviE3ZhOzNrA.Y-A3qS2OUiQTg3ZJg79zgQ.6633382d7e3a79c77a09b613395cf9f9f3b28f4fedf638b5269352185dc71ba8",
   },
   {
     id: 4,
@@ -62,5 +66,7 @@ export const cases: Case[] = [
     category: "Code, Design",
     additionalImages: ["/axenpetersen/axenpetersen_01.png"],
     aspectRatio: "16/10",
+    website: "apfinsnickeri.se",
+    url: "https://apfinsnickeri.se/",
   },
 ];
