@@ -3,79 +3,20 @@
 import Image from "next/image";
 import { cases } from "@/data/caseData";
 import { notFound } from "next/navigation";
-import { useEffect, useState, useRef } from "react";
+import { useEffect } from "react";
 import Link from "next/link";
+import { ArrowRightIcon } from "@/components/Icons";
 
 interface SingleCaseProps {
   slug: string;
 }
 
 export default function SingleCase({ slug }: SingleCaseProps) {
-  // Find the case by slug
   const caseItem = cases.find((c) => c.slug === slug);
-  const [scrollPosition, setScrollPosition] = useState(0);
-  const stickyRef = useRef<HTMLDivElement>(null);
-  const initialScrollOffset = 500; // Adjust this value based on when you want the animation to start
 
-  // Add a state to track if on mobile viewport
-  const [isMobile, setIsMobile] = useState(false);
-
-  // If no case is found, show 404
   if (!caseItem) {
     notFound();
   }
-
-  // Handle scroll animation
-  useEffect(() => {
-    const handleScroll = () => {
-      const position = window.scrollY;
-      setScrollPosition(position);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  // Check viewport size on mount and resize
-  useEffect(() => {
-    const checkViewport = () => {
-      setIsMobile(window.innerWidth < 768); // Tailwind's md breakpoint is 768px
-    };
-
-    // Initial check
-    checkViewport();
-
-    // Add resize listener
-    window.addEventListener("resize", checkViewport);
-
-    // Cleanup
-    return () => window.removeEventListener("resize", checkViewport);
-  }, []);
-
-  // Apply transform based on scroll position only on mobile
-  useEffect(() => {
-    if (stickyRef.current && isMobile) {
-      // Only apply on mobile
-      if (scrollPosition > initialScrollOffset) {
-        const translateY = Math.min(
-          100,
-          ((scrollPosition - initialScrollOffset) / 300) * 100
-        );
-        stickyRef.current.style.transform = `translateY(-${translateY}%)`;
-        stickyRef.current.style.opacity = `${1 - translateY / 100}`;
-      } else {
-        stickyRef.current.style.transform = "translateY(0)";
-        stickyRef.current.style.opacity = "1";
-      }
-    } else if (stickyRef.current && !isMobile) {
-      // Reset styles on desktop
-      stickyRef.current.style.transform = "translateY(0)";
-      stickyRef.current.style.opacity = "1";
-    }
-  }, [scrollPosition, isMobile]);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -105,13 +46,18 @@ export default function SingleCase({ slug }: SingleCaseProps) {
 
   return (
     <section className="col-span-full md:col-span-8 2xl:col-span-10 flex flex-col gap-4">
-      <div className="flex justify-between sticky bg-gray-200  top-0 z-10">
-        <Link href={`/`}>
-          <h3 className="text-2xl font-semibold">{"<"}</h3>
-        </Link>
-        <h2 className="text-2xl font-semibold">{caseItem.title}</h2>
+      <div className="flex sticky flex-col pt-5 gap-4 bg-gray-200 top-0 z-10">
+        <div className="flex justify-between">
+          <Link href={`/`}>
+            <ArrowRightIcon className="w-8 h-8 hover:opacity-60" />
+          </Link>
+          <h2 className="text-2xl font-semibold opacity-100 2xl:opacity-0">
+            {caseItem.title}
+          </h2>
+        </div>
+        <hr className="border-t-2 border-black z-20 w-full" />
       </div>
-      <hr className="border-t-2 border-black z-20" />
+
       <div className="grid grid-cols-1 2xl:grid-cols-2 gap-8">
         {/* Left column with all images */}
         <div className="flex flex-col gap-8 order-2 2xl:order-1">
@@ -150,12 +96,12 @@ export default function SingleCase({ slug }: SingleCaseProps) {
         </div>
 
         {/* Right column with sticky text */}
-        <div
-          ref={stickyRef}
-          className="w-full flex flex-col justify-between sticky top-8 py-5 h-fit overflow-y-auto 2xl:px-5 gap-4 order-1 2xl:order-2 bg-gray-200 transition-transform duration-300"
-        >
-          <div className="text-md font-regular italic mb-2">
-            {caseItem.category}
+        <div className="flex flex-col h-fit gap-4 order-1 2xl:order-2 2xl:sticky 2xl:top-22">
+          <div className="flex flex-col gap-2">
+            <h2 className="text-4xl font-semibold">{caseItem.title}</h2>
+            <div className="text-md font-regular italic">
+              {caseItem.category}
+            </div>
           </div>
           {caseItem.description && (
             <p className="text-md leading-[1.5] font-light">
