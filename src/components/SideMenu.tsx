@@ -71,9 +71,9 @@ export default function SideMenu() {
       </div>
       <div className="flex flex-col gap-4">
         <div className="flex flex-col gap-1">
-          <h3 className="text-lg font-medium">hugosandsjo@gmail.com</h3>
-          <h3 className="text-lg font-medium">0707224289</h3>
-          <h3 className="text-lg font-medium">Instagram</h3>
+          <h3 className="text-lg font-regular">hugosandsjo@gmail.com</h3>
+          <h3 className="text-lg font-regular">0707224289</h3>
+          <h3 className="text-lg font-regular">Instagram</h3>
         </div>
       </div>
     </section>
