@@ -80,7 +80,7 @@ export const cases: Case[] = [
     slug: "kahlskaffe",
     description:
       "A web development project focused on creating an online presence for a ceramic arts studio, showcasing their work and design philosophy.",
-    imagePath: "/kahlskaffe/kahls_startsida_03.png",
+    imagePath: "/kahlskaffe/kahls_logo_black.png",
     category: "Code, Design",
     additionalImages: [
       "/kahlskaffe/kahls_carousel.png",
