@@ -83,6 +83,7 @@ export const cases: Case[] = [
     imagePath: "/kahlskaffe/kahls_logo_black.png",
     category: "Code",
     additionalImages: [
+      "/kahlskaffe/kahls_threemobiles.png",
       "/kahlskaffe/kahls_desktop_hero.png",
       "/kahlskaffe/kahls_carousel.png",
       "/kahlskaffe/kahls_desktop_02.png",
