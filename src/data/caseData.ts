@@ -58,6 +58,45 @@ export const cases: Case[] = [
   },
   {
     id: 4,
+    title: "Malmöfestivalen",
+    slug: "malmofestivalen",
+    description:
+      "A web development project focused on creating an online presence for a ceramic arts studio, showcasing their work and design philosophy.",
+    imagePath: "/malmofestivalen/malmo_mobile_lg_orange.png",
+    category: "Code",
+    additionalImages: [
+      "/malmofestivalen/malmo_desktop.png",
+      "/malmofestivalen/malmo_threemobiles.png",
+      "/malmofestivalen/malmo_hero.png",
+      "/malmofestivalen/malmo_program.png",
+    ],
+    aspectRatio: "16/10",
+    website: "malmofestivalen.se",
+    url: "https://malmofestivalen.se/",
+  },
+  {
+    id: 5,
+    title: "Kahls Kaffe",
+    slug: "kahlskaffe",
+    description:
+      "A web development project focused on creating an online presence for a ceramic arts studio, showcasing their work and design philosophy.",
+    imagePath: "/kahlskaffe/kahls_startsida_03.png",
+    category: "Code, Design",
+    additionalImages: [
+      "/kahlskaffe/kahls_carousel.png",
+      "/kahlskaffe/kahls_desktop_01.png",
+      "/kahlskaffe/kahls_desktop_02.png",
+      "/kahlskaffe/kahls_desktop_hero.png",
+      "/kahlskaffe/kahls_startsida_01.png",
+      "/kahlskaffe/kahls_startsida_02.png",
+      "/kahlskaffe/kahls_startsida_03.png",
+    ],
+    aspectRatio: "16/10",
+    website: "kahlskaffe.se",
+    url: "https://www.kahlskaffe.se/",
+  },
+  {
+    id: 6,
     title: "Axén Petersen Finsnickeri",
     slug: "oscaraxen",
     description:
