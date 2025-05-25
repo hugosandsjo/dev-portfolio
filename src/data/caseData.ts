@@ -26,25 +26,9 @@ export const cases: Case[] = [
     website: "fullkoll.nu",
     url: "https://fullkoll.nu/",
   },
+
   {
     id: 2,
-    title: "Dum keramik",
-    slug: "dumkeramik",
-    description:
-      "A web development project focused on creating an online presence for a ceramic arts studio, showcasing their work and design philosophy.",
-    imagePath: "/dumkeramik/dumkeramik.png",
-    category: "Code",
-    additionalImages: [
-      "/dumkeramik/dumkeramik_01.png",
-      "/dumkeramik/dumkeramik_02.png",
-      "/dumkeramik/dumkeramik_03.png",
-    ],
-    aspectRatio: "16/10",
-    website: "dumkeramik.se",
-    url: "https://dumkeramik.com/",
-  },
-  {
-    id: 3,
     title: "Malmöfestivalen",
     slug: "malmofestivalen",
     description:
@@ -60,6 +44,23 @@ export const cases: Case[] = [
     aspectRatio: "16/10",
     website: "malmofestivalen.se",
     url: "https://malmofestivalen.se/",
+  },
+  {
+    id: 3,
+    title: "Dum keramik",
+    slug: "dumkeramik",
+    description:
+      "A web development project focused on creating an online presence for a ceramic arts studio, showcasing their work and design philosophy.",
+    imagePath: "/dumkeramik/dumkeramik.png",
+    category: "Code",
+    additionalImages: [
+      "/dumkeramik/dumkeramik_01.png",
+      "/dumkeramik/dumkeramik_02.png",
+      "/dumkeramik/dumkeramik_03.png",
+    ],
+    aspectRatio: "16/10",
+    website: "dumkeramik.se",
+    url: "https://dumkeramik.com/",
   },
   {
     id: 4,
