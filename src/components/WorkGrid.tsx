@@ -34,7 +34,6 @@ export default function WorkGrid() {
                 <h2 className="text-2xl font-semibold relative">
                   <span className="relative inline-block">
                     {caseItem.title}
-                    {/* <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-black group-hover:w-full transition-all duration-300 ease-in-out"></span> */}
                   </span>
                 </h2>
                 <div className="h-full">
@@ -47,7 +46,7 @@ export default function WorkGrid() {
                 {caseItem.category}
               </h3>
               {caseItem.description && (
-                <p className="text-md leading-[1.5] font-light">
+                <p className="text-md leading-[1.5] font-light line-clamp-3">
                   {caseItem.description}
                 </p>
               )}

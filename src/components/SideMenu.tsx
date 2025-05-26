@@ -77,29 +77,41 @@ export default function SideMenu() {
                   <h5 className="text-md font-light">2020 –</h5>
                 </div>
               </div>
-              <h2 className="underline underline-offset-3 font-semibold">
-                Education
+              <h2 className="underline text-xs underline-offset-3 font-medium">
+                EDUCATION
               </h2>
               <div className="flex flex-col gap-1">
-                <h4 className="text-xl font-medium">YRGO</h4>
-                <div className="flex justify-between">
-                  <h5 className="text-md font-light">Web developer</h5>
-                </div>
+                <h4 className="text-xl font-semibold">YRGO</h4>
+                <h5 className="text-md font-medium">Web developer</h5>
+                <h5 className="text-xs font-light">2023 – 2025</h5>
               </div>
               <div className="flex flex-col gap-1">
                 <h4 className="text-xl font-medium">Kunsthøgskolen i Oslo</h4>
-                <div className="flex gap-1 items-baseline">
-                  <h5 className="text-md font-light">
-                    Bachelor in Graphic Design
-                  </h5>
-                </div>
+
+                <h5 className="text-md font-light">
+                  Bachelor in Graphic Design
+                </h5>
+                <h5 className="text-xs font-light">2017 – 2020</h5>
               </div>
               <div className="flex flex-col gap-1">
                 <h4 className="text-xl font-medium">School Of Motion</h4>
                 <div className="flex gap-1 items-baseline">
                   <h5 className="text-md font-light">Animation bootcamp</h5>
                 </div>
+                <h5 className="text-xs font-light">2022</h5>
               </div>
+              <h2 className="underline text-xs underline-offset-3 font-medium">
+                COMISSION
+              </h2>
+              <div className="flex flex-col gap-1">
+                <h4 className="text-xl font-medium">Art college</h4>
+                <div className="flex gap-1 items-baseline">
+                  <h5 className="text-md font-light">Teacher</h5>
+                </div>
+              </div>
+              <h2 className="underline text-xs underline-offset-3 font-medium">
+                INTERNSHIP
+              </h2>
             </section>
           </div>
         </div>
