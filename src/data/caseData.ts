@@ -110,4 +110,20 @@ export const cases: Case[] = [
     website: "apfinsnickeri.se",
     url: "https://apfinsnickeri.se/",
   },
+  {
+    id: 7,
+    title: "Stadshem",
+    slug: "stadshem",
+    description:
+      "A web development project focused on creating an online presence for Stadshem, a real estate agency, showcasing their properties and services.",
+    imagePath: "/stadshem/stadshem_main.png",
+    category: "Code",
+    additionalImages: [
+      "/stadshem/stadshem_laptop.png",
+      "/stadshem/stadshem_mobile_three.png",
+    ],
+    aspectRatio: "16/10",
+    website: "stadshem.se",
+    url: "https://www.stadshem.se/",
+  },
 ];
