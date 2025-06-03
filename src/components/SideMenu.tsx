@@ -16,21 +16,21 @@ export default function SideMenu() {
   }, []);
 
   return (
-    <section className="flex flex-col gap-8 sticky top-0 h-fit">
+    <section className="flex flex-col gap-2 sticky top-0 h-fit">
       <div className="flex flex-col pt-5 bg-gray-200 gap-4">
         <div className="flex flex-col gap-2">
           <div
             className="flex justify-between items-center cursor-pointer"
             onClick={() => toggleSection("about")}
           >
-            <h2 className="text-2xl font-semibold">About</h2>
+            <h2 className="text-3xl font-semibold">About</h2>
             <ChevrownRightIcon
               className={`w-8 h-8 transition-transform duration-300 ${
                 openSections.about ? "rotate-90" : ""
               }`}
             />
           </div>
-          <hr className="border-t-2 border-black" />
+          {/* <hr className="border-t-2 border-black" /> */}
         </div>
         <div
           className={`grid ${
@@ -55,14 +55,14 @@ export default function SideMenu() {
             className="flex justify-between items-center cursor-pointer"
             onClick={() => toggleSection("cv")}
           >
-            <h2 className="text-2xl font-semibold">CV</h2>
+            <h2 className="text-3xl font-semibold">CV</h2>
             <ChevrownRightIcon
               className={`w-8 h-8 transition-transform duration-300 ${
                 openSections.cv ? "rotate-90" : ""
               }`}
             />
           </div>
-          <hr className="border-t-2 border-black" />
+          {/* <hr className="border-t-2 border-black" /> */}
         </div>
         <div
           className={`grid ${
