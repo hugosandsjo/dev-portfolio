@@ -73,8 +73,22 @@ export default function SideMenu() {
             <section className="flex flex-col gap-4">
               <div className="flex flex-col gap-1">
                 <h4 className="text-xl font-medium">Enskild firma</h4>
-                <div className="flex justify-between">
-                  <h5 className="text-md font-light">2020 –</h5>
+                <h5 className="text-sm font-light">(2020 –)</h5>
+              </div>
+              <div className="flex flex-col gap-1">
+                <h4 className="text-xl font-medium">Illustratörcentrum</h4>
+                <div className="flex flex-col gap-1">
+                  <h5 className="text-md font-normal">
+                    Regional representative
+                  </h5>
+                  <h5 className="text-sm font-light">(2022 –)</h5>
+                </div>
+              </div>
+              <div className="flex flex-col gap-1">
+                <h4 className="text-xl font-medium">ADA Sweden</h4>
+                <div className="flex gap-1 flex-col">
+                  <h5 className="text-md font-normal">Styrelsemedlem</h5>
+                  <h5 className="text-sm font-light">(2022 – 2025)</h5>
                 </div>
               </div>
               <h2 className="underline text-xs underline-offset-3 font-medium">
@@ -82,36 +96,46 @@ export default function SideMenu() {
               </h2>
               <div className="flex flex-col gap-1">
                 <h4 className="text-xl font-semibold">YRGO</h4>
-                <h5 className="text-md font-medium">Web developer</h5>
-                <h5 className="text-xs font-light">2023 – 2025</h5>
+                <h5 className="text-md font-normal">Web developer</h5>
+                <h5 className="text-sm font-light">(2023 – 2025)</h5>
               </div>
               <div className="flex flex-col gap-1">
                 <h4 className="text-xl font-medium">Kunsthøgskolen i Oslo</h4>
-
-                <h5 className="text-md font-light">
+                <h5 className="text-md font-normal">
                   Bachelor in Graphic Design
                 </h5>
-                <h5 className="text-xs font-light">2017 – 2020</h5>
+                <h5 className="text-sm font-light">(2017 – 2020)</h5>
               </div>
               <div className="flex flex-col gap-1">
                 <h4 className="text-xl font-medium">School Of Motion</h4>
                 <div className="flex gap-1 items-baseline">
-                  <h5 className="text-md font-light">Animation bootcamp</h5>
+                  <h5 className="text-md font-normal">Animation bootcamp</h5>
                 </div>
-                <h5 className="text-xs font-light">2022</h5>
+                <h5 className="text-sm font-light">(2022)</h5>
               </div>
               <h2 className="underline text-xs underline-offset-3 font-medium">
                 COMISSION
               </h2>
               <div className="flex flex-col gap-1">
                 <h4 className="text-xl font-medium">Art college</h4>
-                <div className="flex gap-1 items-baseline">
-                  <h5 className="text-md font-light">Teacher</h5>
+                <div className="flex gap-1 flex-col">
+                  <h5 className="text-md font-normal">Teacher in animation</h5>
+                  <h5 className="text-sm font-light">(2023)</h5>
                 </div>
               </div>
               <h2 className="underline text-xs underline-offset-3 font-medium">
                 INTERNSHIP
               </h2>
+              <div className="flex flex-col gap-1">
+                <h4 className="text-xl font-medium">Simma Lugnt</h4>
+                <h5 className="text-md font-normal">Frontend Developer</h5>
+                <h5 className="text-sm font-light">(2024 – 2025)</h5>
+              </div>
+              <div className="flex flex-col gap-1">
+                <h4 className="text-xl font-medium">Aoki</h4>
+                <h5 className="text-md font-normal">Designer</h5>
+                <h5 className="text-sm font-light">(2021 – 2022)</h5>
+              </div>
             </section>
           </div>
         </div>
