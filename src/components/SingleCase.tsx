@@ -55,7 +55,7 @@ export default function SingleCase({ slug }: SingleCaseProps) {
             {caseItem.title}
           </h2>
         </div>
-        <hr className="border-t-2 border-black z-20 w-full" />
+        {/* <hr className="border-t-2 border-black z-20 w-full" /> */}
       </div>
 
       <div className="grid grid-cols-1 2xl:grid-cols-2 gap-8">

@@ -9,9 +9,9 @@ export default function WorkGrid() {
     <section className="col-span-full md:col-span-8 2xl:col-span-10 flex flex-col gap-4">
       <div className="flex sticky flex-col pt-5 gap-2 bg-gray-200 top-0 z-10">
         <div className="flex justify-between">
-          <h2 className="text-2xl font-semibold">Work</h2>
+          <h2 className="text-3xl font-semibold">Work</h2>
         </div>
-        <hr className="border-t-2 border-black z-20 w-full" />
+        {/* <hr className="border-t-2 border-black z-20 w-full" /> */}
       </div>
       <div className="grid sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-5 gap-8">
         {cases.map((caseItem) => (

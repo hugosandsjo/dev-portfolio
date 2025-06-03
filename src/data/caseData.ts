@@ -3,32 +3,6 @@ import { Case } from "@/types/caseType";
 export const cases: Case[] = [
   {
     id: 1,
-    title: "Full koll",
-    slug: "fullkoll",
-    description:
-      "Together with Gullersgrupp, I developed a set of illustrations and visual identity for the County Administrative Board and the 'Full Koll’ campaign. Intended to inform teenage parents about setting boundaries around alcohol and drugs and the importance of talking about the subject.",
-    imagePath: "/fullkoll/fullkoll_main.jpg",
-    category: "Illustration",
-    additionalImages: [
-      "/fullkoll/fullkoll_01.jpg",
-      "/fullkoll/fullkoll_02.jpg",
-      "/fullkoll/fullkoll_03.jpg",
-      "/fullkoll/fullkoll_04.jpg",
-      "/fullkoll/fullkoll_05.jpg",
-      "/fullkoll/fullkoll_06.jpg",
-      "/fullkoll/fullkoll_07.jpg",
-      "/fullkoll/fullkoll_08.jpg",
-      "/fullkoll/mobile_01.jpg",
-      "/fullkoll/mobile_02.jpg",
-      "/fullkoll/mobile_03.jpg",
-    ],
-    aspectRatio: "4/5",
-    website: "fullkoll.nu",
-    url: "https://fullkoll.nu/",
-  },
-
-  {
-    id: 2,
     title: "Malmöfestivalen",
     slug: "malmofestivalen",
     description:
@@ -46,7 +20,7 @@ export const cases: Case[] = [
     url: "https://malmofestivalen.se/",
   },
   {
-    id: 3,
+    id: 2,
     title: "Dum keramik",
     slug: "dumkeramik",
     description:
@@ -61,6 +35,31 @@ export const cases: Case[] = [
     aspectRatio: "16/10",
     website: "dumkeramik.se",
     url: "https://dumkeramik.com/",
+  },
+  {
+    id: 3,
+    title: "Full koll",
+    slug: "fullkoll",
+    description:
+      "Together with Gullersgrupp, I developed a set of illustrations and visual identity for the County Administrative Board and the 'Full Koll’ campaign. Intended to inform teenage parents about setting boundaries around alcohol and drugs and the importance of talking about the subject.",
+    imagePath: "/fullkoll/fullkoll_02.jpg",
+    category: "Illustration",
+    additionalImages: [
+      "/fullkoll/fullkoll_01.jpg",
+      "/fullkoll/fullkoll_main.jpg",
+      "/fullkoll/fullkoll_03.jpg",
+      "/fullkoll/fullkoll_04.jpg",
+      "/fullkoll/fullkoll_05.jpg",
+      "/fullkoll/fullkoll_06.jpg",
+      "/fullkoll/fullkoll_07.jpg",
+      "/fullkoll/fullkoll_08.jpg",
+      "/fullkoll/mobile_01.jpg",
+      "/fullkoll/mobile_02.jpg",
+      "/fullkoll/mobile_03.jpg",
+    ],
+    aspectRatio: "4/5",
+    website: "fullkoll.nu",
+    url: "https://fullkoll.nu/",
   },
   {
     id: 4,
