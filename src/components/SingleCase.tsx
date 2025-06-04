@@ -48,7 +48,7 @@ export default function SingleCase({ slug }: SingleCaseProps) {
     const hyphenMap: Record<string, string> = {
       Malmöfestivalen: "Malmö\u00ADfestivalen",
       Illustrationsfestival: "Illustrations\u00ADfestival",
-      "Grindebacken strandhak": "Grinde\u00ADbacken Strandhak",
+      "Grindebacken Strandhak": "Grinde\u00ADbacken Strandhak",
     };
 
     return hyphenMap[title] || title;
