@@ -18,13 +18,21 @@ export const cases: Case[] = [
     aspectRatio: "16/10",
     website: "malmofestivalen.se",
     url: "https://malmofestivalen.se/",
+    tools: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Storyblok",
+      "React",
+      "Figma",
+    ],
   },
   {
     id: 2,
     title: "Dum keramik",
     slug: "dumkeramik",
     description:
-      "A web development project focused on creating an online presence for a ceramic arts studio, showcasing their work and design philosophy.",
+      "Web development project focused on creating an online presence for a ceramic arts studio, showcasing their work and design philosophy.",
     imagePath: "/dumkeramik/dumkeramik.png",
     category: "Code",
     additionalImages: [
@@ -35,6 +43,7 @@ export const cases: Case[] = [
     aspectRatio: "16/10",
     website: "dumkeramik.se",
     url: "https://dumkeramik.com/",
+    tools: ["Webflow", "Figma"],
   },
   {
     id: 3,
@@ -45,21 +54,22 @@ export const cases: Case[] = [
     imagePath: "/fullkoll/fullkoll_02.jpg",
     category: "Illustration",
     additionalImages: [
-      "/fullkoll/fullkoll_01.jpg",
       "/fullkoll/fullkoll_main.jpg",
-      "/fullkoll/fullkoll_03.jpg",
       "/fullkoll/fullkoll_04.jpg",
-      "/fullkoll/fullkoll_05.jpg",
-      "/fullkoll/fullkoll_06.jpg",
-      "/fullkoll/fullkoll_07.jpg",
-      "/fullkoll/fullkoll_08.jpg",
-      "/fullkoll/mobile_01.jpg",
-      "/fullkoll/mobile_02.jpg",
       "/fullkoll/mobile_03.jpg",
+      "/fullkoll/fullkoll_06.jpg",
+      "/fullkoll/mobile_02.jpg",
+      "/fullkoll/fullkoll_03.jpg",
+      "/fullkoll/fullkoll_05.jpg",
+      "/fullkoll/fullkoll_07.jpg",
+      "/fullkoll/fullkoll_01.jpg",
+      "/fullkoll/mobile_01.jpg",
+      "/fullkoll/fullkoll_08.jpg",
     ],
     aspectRatio: "4/5",
     website: "fullkoll.nu",
     url: "https://fullkoll.nu/",
+    tools: ["Adobe Illustrator", "Adobe Photoshop"],
   },
   {
     id: 4,
@@ -78,7 +88,7 @@ export const cases: Case[] = [
     title: "Kahls Kaffe",
     slug: "kahlskaffe",
     description:
-      "A web development project focused on creating an online presence for Kahls Kaffe, a coffee roastery and retailer, showcasing their products and brand story.",
+      "Part of the development team on a project focused on creating an online presence for Kahls Kaffe, a coffee roastery and retailer, showcasing their products and brand story.",
     imagePath: "/kahlskaffe/kahls_logo_black.png",
     category: "Code",
     additionalImages: [
@@ -94,6 +104,14 @@ export const cases: Case[] = [
     aspectRatio: "16/10",
     website: "kahlskaffe.se",
     url: "https://www.kahlskaffe.se/",
+    tools: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Storyblok",
+      "React",
+      "Figma",
+    ],
   },
   {
     id: 6,
@@ -112,6 +130,14 @@ export const cases: Case[] = [
     aspectRatio: "16/10",
     website: "stadshem.se",
     url: "https://www.stadshem.se/",
+    tools: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Storyblok",
+      "React",
+      "Figma",
+    ],
   },
   {
     id: 7,
@@ -125,6 +151,7 @@ export const cases: Case[] = [
     aspectRatio: "16/10",
     website: "apfinsnickeri.se",
     url: "https://apfinsnickeri.se/",
+    tools: ["Figma", "WordPress", "PHP", "CSS", "JavaScript"],
   },
   {
     id: 8,
@@ -140,6 +167,7 @@ export const cases: Case[] = [
       "/bildvarldgransland/festival_02.jpg",
     ],
     aspectRatio: "4/5",
+    tools: ["Procreate", "Adobe Photoshop"],
   },
   {
     id: 9,
@@ -147,13 +175,14 @@ export const cases: Case[] = [
     slug: "grindebacken-strandhak",
     description:
       "Illustration and design project for Grindebacken Strandhak, a beachside restaurant, focusing on creating a vibrant and inviting visual identity.",
-    imagePath: "/grindebacken/grind_totebag.jpg",
+    imagePath: "/grindebacken/logo_hoodie.jpg",
     category: "Illustration",
     additionalImages: [
-      "/grindebacken/logo_hoodie.jpg",
+      "/grindebacken/grind_totebag.jpg",
       "/grindebacken/houses.png",
       "/grindebacken/grind.png",
     ],
     aspectRatio: "4/5",
+    tools: ["Procreate", "Adobe Photoshop"],
   },
 ];

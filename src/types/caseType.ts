@@ -9,4 +9,5 @@ export type Case = {
   aspectRatio: "16/10" | "1/1" | "4/5";
   website?: string;
   url?: string;
+  tools?: string[];
 };
