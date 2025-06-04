@@ -170,7 +170,9 @@ export default function SideMenu() {
       <div className="flex flex-col gap-4">
         <div className="flex flex-col gap-4">
           <div className="flex flex-col gap-1">
-            <h3 className="text-lg font-regular opacity-70">Clients</h3>
+            <h3 className="text-md font-regular opacity-70">
+              Selected clients:
+            </h3>
             <h3 className="text-md font-regular opacity-70">
               Sveriges länsstyrelser / Uppsala Stadsteater / Gatutidningen
               Faktum / Sveriges Stadsmissioner / Gyldendal Norsk Forlag /

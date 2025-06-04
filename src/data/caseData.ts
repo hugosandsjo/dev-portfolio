@@ -65,8 +65,7 @@ export const cases: Case[] = [
     id: 4,
     title: "Motion reel",
     slug: "motionreel",
-    description:
-      "A collection of motion graphics and animations showcasing various techniques and styles for different contexts.",
+    description: "A collection of motion graphics and animations.",
     imagePath: "/reel/Instagram_birdandgirl.gif",
     category: "Motion",
     aspectRatio: "16/10",
@@ -119,7 +118,7 @@ export const cases: Case[] = [
     title: "Axén Petersen Finsnickeri",
     slug: "oscaraxen",
     description:
-      "A web development project focused on creating an online presence for a ceramic arts studio, showcasing their work and design philosophy.",
+      "A web development project focused on creating an online presence for a carpenter studio, showcasing their work.",
     imagePath: "/axenpetersen/axenpetersen_gif_small.gif",
     category: "Code, Design",
     additionalImages: ["/axenpetersen/axenpetersen_01.png"],
@@ -132,7 +131,7 @@ export const cases: Case[] = [
     title: "Illustrationsfestival",
     slug: "illustrationsfestival",
     description:
-      "A web development project focused on creating an online presence for the Illustrationsfestival, showcasing their events and artists.",
+      "Poster for Illustrationsfestival 2024 in Malmö, Sweden. The project involved creating a series of vibrant and engaging illustrations that captured the essence of the festival and its diverse range of activities.",
     imagePath: "/bildvarldgransland/festival_main.png",
     category: "Illustration",
     additionalImages: [
@@ -141,12 +140,10 @@ export const cases: Case[] = [
       "/bildvarldgransland/festival_02.jpg",
     ],
     aspectRatio: "4/5",
-    website: "svenskakyrkan.se",
-    url: "https://www.svenskakyrkan.se/",
   },
   {
     id: 9,
-    title: "Grindebacken strandhak",
+    title: "Grindebacken Strandhak",
     slug: "grindebacken-strandhak",
     description:
       "Illustration and design project for Grindebacken Strandhak, a beachside restaurant, focusing on creating a vibrant and inviting visual identity.",
