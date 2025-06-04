@@ -120,7 +120,7 @@ export default function SingleCase({ slug }: SingleCaseProps) {
               {caseItem.description}
             </p>
           )}
-          <div className=" flex flex-col gap-1 text-sm opacity-70">
+          <div className="flex flex-wrap xl:flex-col gap-1 text-sm opacity-70">
             {caseItem.tools && caseItem.tools.length > 0
               ? caseItem.tools.map((tool, index) => <p key={index}>{tool}</p>)
               : null}
