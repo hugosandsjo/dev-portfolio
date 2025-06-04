@@ -127,4 +127,34 @@ export const cases: Case[] = [
     website: "apfinsnickeri.se",
     url: "https://apfinsnickeri.se/",
   },
+  {
+    id: 8,
+    title: "Illustrationsfestival",
+    slug: "illustrationsfestival",
+    description:
+      "A web development project focused on creating an online presence for the Illustrationsfestival, showcasing their events and artists.",
+    imagePath: "/bildvarldgransland/illustrationsfestival_main.jpg",
+    category: "Illustration",
+    additionalImages: [
+      "/bildvarldgransland/illustrationsfestival_main.jpg",
+      "/bildvarldgransland/illustrationsfestival_banner.jpg",
+    ],
+    aspectRatio: "16/10",
+    website: "svenskakyrkan.se",
+    url: "https://www.svenskakyrkan.se/",
+  },
+  {
+    id: 9,
+    title: "Grindebacken strandhak",
+    slug: "grindebacken-strandhak",
+    description:
+      "Illustration and design project for Grindebacken Strandhak, a beachside restaurant, focusing on creating a vibrant and inviting visual identity.",
+    imagePath: "/grindebacken/grind_totebag.jpg",
+    category: "Illustration",
+    additionalImages: [
+      "/grindebacken/logo_hoodie.jpg",
+      "/grindebacken/houses.png",
+    ],
+    aspectRatio: "4/5",
+  },
 ];
