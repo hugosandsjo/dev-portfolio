@@ -16,7 +16,7 @@ export default function Navigation() {
   }, []);
 
   return (
-    <nav className="flex gap-4 w-full justify-between items-center py-2 sm:py-8 px-10 md:px-20 bg-gray-200">
+    <nav className="flex gap-4 w-full justify-between items-center py-2 lg:py-8 px-10 lg:px-20 bg-gray-200">
       <Link href={"/"} className="w-10 h-10 lg:w-20 lg:h-20">
         <svg
           width="100%"
