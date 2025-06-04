@@ -174,10 +174,10 @@ export default function SideMenu() {
               Selected clients:
             </h3>
             <h3 className="text-md font-regular opacity-70">
-              Sveriges länsstyrelser / Uppsala Stadsteater / Gatutidningen
-              Faktum / Sveriges Stadsmissioner / Gyldendal Norsk Forlag /
-              Illustratörcentrum / Antaros Medical AB / Malmöfestivalen / Dum
-              Keramik / Aoki / Stadshem
+              Sveriges Länsstyrelser / Uppsala Stadsteater / Gatutidningen
+              Faktum / Sveriges Stadsmissioner / Malmöfestivalen /
+              Illustratörcentrum / Antaros Medical AB / Dum Keramik / Aoki /
+              Stadshem / Gyldendal Norsk Forlag
             </h3>
           </div>
         </div>

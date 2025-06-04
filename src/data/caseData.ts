@@ -118,8 +118,8 @@ export const cases: Case[] = [
     title: "Axén Petersen Finsnickeri",
     slug: "oscaraxen",
     description:
-      "A web development project focused on creating an online presence for a carpenter studio, showcasing their work.",
-    imagePath: "/axenpetersen/axenpetersen_gif_small.gif",
+      "Website focused on creating an online presence for a carpenter studio in Gothenburg, showcasing their work and skillset.",
+    imagePath: "/axenpetersen/skarbrada.jpg",
     category: "Code, Design",
     additionalImages: ["/axenpetersen/axenpetersen_01.png"],
     aspectRatio: "16/10",
