@@ -144,16 +144,20 @@ export default function SideMenu() {
 
       <div className="flex flex-col gap-4">
         <div className="flex flex-col gap-4">
-          <div className="flex flex-col gap-1">
+          <div className="flex flex-col gap-1 pb-2">
             <h3 className="text-lg font-regular">
               <Link
                 href="mailto:hugosandsjo@gmail.com?subject=Portfolio%20Inquiry&body=Hi%20Hugo,%0A%0A"
                 className="hover:opacity-70"
               >
                 hugosandsjo@gmail.com
-              </Link>{" "}
+              </Link>
             </h3>
-            <h3 className="text-lg font-regular">0707224289</h3>
+            <h3 className="text-lg font-regular">
+              <Link href="tel:0707224289" className="hover:opacity-70">
+                0707224289
+              </Link>
+            </h3>
             <h3 className="text-lg font-regular">
               <Link
                 href={"https://www.instagram.com/hu_go_do/"}
