@@ -65,8 +65,7 @@ export const cases: Case[] = [
     id: 4,
     title: "Motion reel",
     slug: "motionreel",
-    description:
-      "A collection of motion graphics and animations showcasing various techniques and styles for different contexts.",
+    description: "A collection of motion graphics and animations.",
     imagePath: "/reel/Instagram_birdandgirl.gif",
     category: "Motion",
     aspectRatio: "16/10",
@@ -119,12 +118,42 @@ export const cases: Case[] = [
     title: "Axén Petersen Finsnickeri",
     slug: "oscaraxen",
     description:
-      "A web development project focused on creating an online presence for a ceramic arts studio, showcasing their work and design philosophy.",
-    imagePath: "/axenpetersen/axenpetersen_gif_small.gif",
+      "Website focused on creating an online presence for a carpenter studio in Gothenburg, showcasing their work and skillset.",
+    imagePath: "/axenpetersen/skarbrada.jpg",
     category: "Code, Design",
     additionalImages: ["/axenpetersen/axenpetersen_01.png"],
     aspectRatio: "16/10",
     website: "apfinsnickeri.se",
     url: "https://apfinsnickeri.se/",
+  },
+  {
+    id: 8,
+    title: "Illustrationsfestival",
+    slug: "illustrationsfestival",
+    description:
+      "Poster for Illustrationsfestival 2024 in Malmö, Sweden. The project involved creating a series of vibrant and engaging illustrations that captured the essence of the festival and its diverse range of activities.",
+    imagePath: "/bildvarldgransland/festival_main.png",
+    category: "Illustration",
+    additionalImages: [
+      "/bildvarldgransland/festival_01.jpg",
+      "/bildvarldgransland/festival_03.jpg",
+      "/bildvarldgransland/festival_02.jpg",
+    ],
+    aspectRatio: "4/5",
+  },
+  {
+    id: 9,
+    title: "Grindebacken Strandhak",
+    slug: "grindebacken-strandhak",
+    description:
+      "Illustration and design project for Grindebacken Strandhak, a beachside restaurant, focusing on creating a vibrant and inviting visual identity.",
+    imagePath: "/grindebacken/grind_totebag.jpg",
+    category: "Illustration",
+    additionalImages: [
+      "/grindebacken/logo_hoodie.jpg",
+      "/grindebacken/houses.png",
+      "/grindebacken/grind.png",
+    ],
+    aspectRatio: "4/5",
   },
 ];

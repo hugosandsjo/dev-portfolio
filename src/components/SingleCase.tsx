@@ -44,9 +44,19 @@ export default function SingleCase({ slug }: SingleCaseProps) {
     };
   }, []);
 
+  function addCustomHyphens(title: string): string {
+    const hyphenMap: Record<string, string> = {
+      Malmöfestivalen: "Malmö\u00ADfestivalen",
+      Illustrationsfestival: "Illustrations\u00ADfestival",
+      "Grindebacken Strandhak": "Grinde\u00ADbacken Strandhak",
+    };
+
+    return hyphenMap[title] || title;
+  }
+
   return (
     <section className="col-span-full md:col-span-8 2xl:col-span-10 flex flex-col gap-4">
-      <div className="flex sticky flex-col pt-5 gap-2 bg-gray-200 top-0 z-10">
+      <div className="flex sticky flex-col pt-5 pb-3 gap-2 bg-gray-200 top-0 z-10">
         <div className="flex justify-between">
           <Link href={`/`} className=" hover:opacity-60">
             <ArrowLeftIcon className="w-8 h-8 text-white" />
@@ -98,7 +108,9 @@ export default function SingleCase({ slug }: SingleCaseProps) {
         {/* Right column with sticky text */}
         <div className="flex flex-col h-fit gap-4 order-1 2xl:order-2 2xl:sticky 2xl:top-22 2xl:px-16 2xl:py-10">
           <div className="flex flex-col gap-4">
-            <h2 className="text-6xl font-semibold">{caseItem.title}</h2>
+            <h2 className="text-6xl font-semibold hyphens-auto md:hyphens-none break-words">
+              {addCustomHyphens(caseItem.title)}
+            </h2>
             <div className="text-md font-regular italic">
               {caseItem.category}
             </div>

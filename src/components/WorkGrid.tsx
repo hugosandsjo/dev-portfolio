@@ -7,7 +7,7 @@ import { ArrowOutwardIcon } from "@/components/Icons";
 export default function WorkGrid() {
   return (
     <section className="col-span-full md:col-span-8 2xl:col-span-10 flex flex-col gap-4">
-      <div className="flex sticky flex-col pt-5 gap-2 bg-gray-200 top-0 z-10">
+      <div className="flex sticky flex-col pb-3 pt-5 gap-2 bg-gray-200 top-0 z-10">
         <div className="flex justify-between">
           <h2 className="text-3xl font-semibold">Work</h2>
         </div>
@@ -20,7 +20,7 @@ export default function WorkGrid() {
             href={`/work/${caseItem.slug}`}
             className="flex flex-col gap-3 fade-div cursor-pointer group"
           >
-            <div className="relative aspect-square sm:aspect-4/5 w-full">
+            <div className="relative aspect-4/5 w-full">
               <Image
                 src={caseItem.imagePath}
                 alt={caseItem.title}
