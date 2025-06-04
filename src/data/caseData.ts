@@ -133,13 +133,14 @@ export const cases: Case[] = [
     slug: "illustrationsfestival",
     description:
       "A web development project focused on creating an online presence for the Illustrationsfestival, showcasing their events and artists.",
-    imagePath: "/bildvarldgransland/illustrationsfestival_main.jpg",
+    imagePath: "/bildvarldgransland/festival_main.png",
     category: "Illustration",
     additionalImages: [
-      "/bildvarldgransland/illustrationsfestival_main.jpg",
-      "/bildvarldgransland/illustrationsfestival_banner.jpg",
+      "/bildvarldgransland/festival_01.jpg",
+      "/bildvarldgransland/festival_03.jpg",
+      "/bildvarldgransland/festival_02.jpg",
     ],
-    aspectRatio: "16/10",
+    aspectRatio: "4/5",
     website: "svenskakyrkan.se",
     url: "https://www.svenskakyrkan.se/",
   },
@@ -154,6 +155,7 @@ export const cases: Case[] = [
     additionalImages: [
       "/grindebacken/logo_hoodie.jpg",
       "/grindebacken/houses.png",
+      "/grindebacken/grind.png",
     ],
     aspectRatio: "4/5",
   },

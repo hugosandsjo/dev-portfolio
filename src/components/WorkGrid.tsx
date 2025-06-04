@@ -20,7 +20,7 @@ export default function WorkGrid() {
             href={`/work/${caseItem.slug}`}
             className="flex flex-col gap-3 fade-div cursor-pointer group"
           >
-            <div className="relative aspect-square sm:aspect-4/5 w-full">
+            <div className="relative aspect-4/5 w-full">
               <Image
                 src={caseItem.imagePath}
                 alt={caseItem.title}

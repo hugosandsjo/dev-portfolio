@@ -2,6 +2,7 @@
 
 import { ChevrownRightIcon } from "@/components/Icons";
 import { useSideMenu } from "@/context/SideMenuContext";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function SideMenu() {
@@ -144,9 +145,38 @@ export default function SideMenu() {
       <div className="flex flex-col gap-4">
         <div className="flex flex-col gap-4">
           <div className="flex flex-col gap-1">
-            <h3 className="text-lg font-regular">hugosandsjo@gmail.com</h3>
+            <h3 className="text-lg font-regular">
+              <Link
+                href="mailto:hugosandsjo@gmail.com?subject=Portfolio%20Inquiry&body=Hi%20Hugo,%0A%0A"
+                className="hover:opacity-70"
+              >
+                hugosandsjo@gmail.com
+              </Link>{" "}
+            </h3>
             <h3 className="text-lg font-regular">0707224289</h3>
-            <h3 className="text-lg font-regular">Instagram</h3>
+            <h3 className="text-lg font-regular">
+              <Link
+                href={"https://www.instagram.com/hu_go_do/"}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:opacity-70"
+              >
+                Instagram
+              </Link>
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-1">
+            <h3 className="text-lg font-regular opacity-70">Clients</h3>
+            <h3 className="text-md font-regular opacity-70">
+              Sveriges länsstyrelser / Uppsala Stadsteater / Gatutidningen
+              Faktum / Sveriges Stadsmissioner / Gyldendal Norsk Forlag /
+              Illustratörcentrum / Antaros Medical AB / Malmöfestivalen / Dum
+              Keramik / Aoki / Stadshem
+            </h3>
           </div>
         </div>
       </div>
