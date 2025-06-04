@@ -59,7 +59,7 @@ export default async function CasePage({ params }: PageProps) {
 
   return (
     <div className="bg-gray-200 flex flex-col items-center justify-items-center min-h-screen gap-16 font-[family-name:var(--font-geist-sans)]">
-      <main className="grid grid-cols-12 row-start-2 items-center md:items-start md:gap-10 w-full px-8 lg:px-20 pb-20 md:pt-40">
+      <main className="grid grid-cols-12 row-start-2 items-center md:items-start md:gap-10 w-full px-4 lg:px-20 pb-20 md:pt-40">
         <div className="order-2 lg:order-1 col-span-full lg:col-span-3 2xl:col-span-2 h-full">
           <SideMenu />
         </div>
