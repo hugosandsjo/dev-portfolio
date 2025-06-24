@@ -89,7 +89,7 @@ export const cases: Case[] = [
     title: "Kahls Kaffe",
     slug: "kahlskaffe",
     description:
-      "Part of the development team on a project focused on creating an online presence for Kahls Kaffe, a coffee roastery and retailer, showcasing their products and brand story.",
+      "As part of the development team, I contributed to the creation of a new online presence for Kahls Kaffe, a renowned Swedish coffee roastery and retailer with a heritage dating back to 1911. The project's core objective was to showcase their diverse range of premium coffee and tea products, alongside their compelling brand story. Our development focused on building an intuitive and engaging platform that allows users to explore Kahls' product catalog, from single-origin beans to specialty blends, while conveying their commitment to quality, sustainability, and traditional craftsmanship. The website acts as a digital flagship, inviting visitors to delve into the world of Kahls Kaffe.",
     imagePath: "/kahlskaffe/kahls_logo_black.png",
     category: "Code",
     additionalImages: [
@@ -143,7 +143,7 @@ export const cases: Case[] = [
   {
     id: 7,
     title: "Axén Petersen Finsnickeri",
-    slug: "oscaraxen",
+    slug: "axenpetersen-finsnickeri",
     description:
       "Website focused on creating an online presence for a carpenter studio in Gothenburg, showcasing their work and skillset.",
     imagePath: "/axenpetersen/skarbrada.jpg",
