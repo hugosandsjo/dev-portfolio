@@ -11,7 +11,6 @@ export default function WorkGrid() {
         <div className="flex justify-between">
           <h2 className="text-3xl font-semibold">Work</h2>
         </div>
-        {/* <hr className="border-t-2 border-black z-20 w-full" /> */}
       </div>
       <div className="grid sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-5 gap-8">
         {cases.map((caseItem) => (

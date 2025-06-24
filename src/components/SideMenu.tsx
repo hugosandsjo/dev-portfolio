@@ -31,7 +31,6 @@ export default function SideMenu() {
               }`}
             />
           </div>
-          {/* <hr className="border-t-2 border-black" /> */}
         </div>
         <div
           className={`grid ${
@@ -63,7 +62,6 @@ export default function SideMenu() {
               }`}
             />
           </div>
-          {/* <hr className="border-t-2 border-black" /> */}
         </div>
         <div
           className={`grid ${
