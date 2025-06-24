@@ -148,7 +148,16 @@ export default function SingleCase({ slug }: SingleCaseProps) {
           )}
           <div className="flex flex-wrap xl:flex-col gap-1 text-sm opacity-70">
             {caseItem.tools && caseItem.tools.length > 0
-              ? caseItem.tools.map((tool, index) => <p key={index}>{tool}</p>)
+              ? caseItem.tools.map((tool, index) => (
+                  <div
+                    className="px-2 py-1 border border-black- rounded-full"
+                    key={index}
+                  >
+                    <p key={index} className="text-xs">
+                      {tool}
+                    </p>
+                  </div>
+                ))
               : null}
           </div>
           {caseItem.website && (
