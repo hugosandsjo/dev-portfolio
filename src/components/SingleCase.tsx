@@ -85,7 +85,7 @@ export default function SingleCase({ slug }: SingleCaseProps) {
             <ArrowLeftIcon className="w-8 h-8 text-white" />
           </Link>
           <h2
-            className={`text-2xl font-semibold transition-opacity duration-300 ${
+            className={`text-2xl font-semibold transition-opacity duration-300 2xl:hidden ${
               isStuck ? "opacity-100" : "opacity-0"
             }`}
           >
@@ -146,9 +146,18 @@ export default function SingleCase({ slug }: SingleCaseProps) {
               {caseItem.description}
             </p>
           )}
-          <div className="flex flex-wrap xl:flex-col gap-1 text-sm opacity-70">
+          <div className="flex flex-wrap gap-1 text-sm">
             {caseItem.tools && caseItem.tools.length > 0
-              ? caseItem.tools.map((tool, index) => <p key={index}>{tool}</p>)
+              ? caseItem.tools.map((tool, index) => (
+                  <div
+                    className="px-2 py-1 border border-black rounded-full"
+                    key={index}
+                  >
+                    <p key={index} className="text-xs">
+                      {tool}
+                    </p>
+                  </div>
+                ))
               : null}
           </div>
           {caseItem.website && (
