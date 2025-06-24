@@ -146,7 +146,7 @@ export default function SingleCase({ slug }: SingleCaseProps) {
               {caseItem.description}
             </p>
           )}
-          <div className="flex flex-wrap gap-1 text-sm opacity-70">
+          <div className="flex flex-wrap gap-1 text-sm">
             {caseItem.tools && caseItem.tools.length > 0
               ? caseItem.tools.map((tool, index) => (
                   <div

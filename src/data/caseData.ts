@@ -25,6 +25,7 @@ export const cases: Case[] = [
       "Storyblok",
       "React",
       "Figma",
+      "CSS",
     ],
   },
   {
@@ -32,7 +33,7 @@ export const cases: Case[] = [
     title: "Dum keramik",
     slug: "dumkeramik",
     description:
-      "Web development project focused on creating an online presence for a ceramic arts studio, showcasing their work and design philosophy.",
+      "Developed and launched the online presence for Dum Keramik, a ceramic arts studio. Collaborating closely with a designer and the client, I built a robust and easily maintainable Webflow site, effectively showcasing their unique work and design philosophy.",
     imagePath: "/dumkeramik/dumkeramik.png",
     category: "Code",
     additionalImages: [
@@ -43,14 +44,14 @@ export const cases: Case[] = [
     aspectRatio: "16/10",
     website: "dumkeramik.se",
     url: "https://dumkeramik.com/",
-    tools: ["Webflow", "Figma"],
+    tools: ["Webflow", "Figma", "JavaScript", "CSS", "HTML"],
   },
   {
     id: 3,
     title: "Full koll",
     slug: "fullkoll",
     description:
-      "Together with Gullersgrupp, I developed a set of illustrations and visual identity for the County Administrative Board and the 'Full Koll’ campaign. Intended to inform teenage parents about setting boundaries around alcohol and drugs and the importance of talking about the subject.",
+      "In collaboration with Gullersgrupp, I developed the visual identity and illustrations for the County Administrative Board's Full Koll campaign. This initiative aimed to educate teenage parents on setting boundaries regarding alcohol and drugs and the value of open dialogue. The project's success hinged on balancing a serious subject with a playful, optimistic, and engaging visual approach, ensuring the message was both impactful and inviting.",
     imagePath: "/fullkoll/fullkoll_02.jpg",
     category: "Illustration",
     additionalImages: [
@@ -118,7 +119,7 @@ export const cases: Case[] = [
     title: "Stadshem",
     slug: "stadshem",
     description:
-      "A web development project focused on creating an online presence for Stadshem, a real estate agency, showcasing their properties and services.",
+      "For Stadshem, a leading real estate agency, our team developed a new website designed to transform their online presence. The centerpiece of the project is the innovative property page, featuring a unique double-scroll interaction. This allows users to seamlessly glide between property details and high-quality photography, creating an immersive experience. We aimed to evoke the feel of a curated magazine rather than a standard listing, making the property information feel editorial and presenting each home as the star.",
     imagePath: "/stadshem/stadshem_main.png",
     category: "Code",
     additionalImages: [
@@ -174,7 +175,7 @@ export const cases: Case[] = [
     title: "Grindebacken Strandhak",
     slug: "grindebacken-strandhak",
     description:
-      "Illustration and design project for Grindebacken Strandhak, a beachside restaurant, focusing on creating a vibrant and inviting visual identity.",
+      "For Grindebacken Strandhak, a charming seaside restaurant on Hermanö, I developed a vibrant new visual identity, including a core mascot and a series of accompanying characters. The goal was to create an inviting brand world that guests could truly connect with. The mascot was specifically designed for maximum versatility, seamlessly appearing across a wide range of touchpoints – from workwear and ceramics to printed menus and digital platforms. Together with characters inspired by Grindebacken's unique coastal location, these illustrations craft a cohesive and engaging brand story, immersing guests in the restaurant's distinct world.",
     imagePath: "/grindebacken/logo_hoodie.jpg",
     category: "Illustration",
     additionalImages: [
