@@ -70,7 +70,7 @@ export default function WorkGrid() {
         <div className="flex justify-between">
           <h2 className="text-3xl font-semibold">Work</h2>
           <div
-            className={`transition-opacity duration-300 ${
+            className={`transition-opacity xl:opacity-0 duration-300 ${
               isStuck ? "opacity-100" : "opacity-0 pointer-events-none"
             }`}
           >
