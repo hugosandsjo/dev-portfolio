@@ -34,3 +34,14 @@ export const ArrowOutwardIcon = (props: IconProps) => (
     <path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z" />
   </svg>
 );
+
+export const ArrowUpwardIcon = (props: IconProps) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+    viewBox="0 -960 960 960"
+    fill="#1f1f1f"
+  >
+    <path d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z" />
+  </svg>
+);
