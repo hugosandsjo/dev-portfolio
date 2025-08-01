@@ -137,12 +137,12 @@ export default function SingleCase({ slug }: SingleCaseProps) {
             <h2 className="text-6xl font-semibold hyphens-auto md:hyphens-none break-words">
               {addCustomHyphens(caseItem.title)}
             </h2>
-            <div className="text-md font-regular italic">
+            <div className="text-md font-regular italic lg:text-2xl">
               {caseItem.category}
             </div>
           </div>
           {caseItem.description && (
-            <p className="text-md leading-[1.5] font-light max-w-[560px]">
+            <p className="text-md leading-[1.5] font-light max-w-[560px] lg:text-lg">
               {caseItem.description}
             </p>
           )}
@@ -150,10 +150,10 @@ export default function SingleCase({ slug }: SingleCaseProps) {
             {caseItem.tools && caseItem.tools.length > 0
               ? caseItem.tools.map((tool, index) => (
                   <div
-                    className="px-2 py-1 border border-black rounded-full"
+                    className="px-2 py-1 lg:px-3 border border-black rounded-full"
                     key={index}
                   >
-                    <p key={index} className="text-xs">
+                    <p key={index} className="text-xs lg:text-sm">
                       {tool}
                     </p>
                   </div>
@@ -165,7 +165,7 @@ export default function SingleCase({ slug }: SingleCaseProps) {
               href={caseItem.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="underline underline-offset-2"
+              className="underline underline-offset-2 lg:text-md"
             >
               {caseItem.website}
             </a>
