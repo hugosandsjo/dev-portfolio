@@ -39,11 +39,11 @@ export default function SideMenu() {
         >
           <div className="overflow-hidden">
             <p className="text-md leading-[1.5] font-light">
-              With a background in arts and crafts i bring my knowledge in
-              classic design techniques into the digital landscape. I get
-              excited about visual problem solving and depending on the needs of
-              the project I use design, code and animation to deliver the
-              desired result.
+              Hugo is a web developer and digital designer with a background in
+              graphic design, illustration and animation. He moves seamlessly
+              between creative idea development and technical implementation,
+              creating solutions where design, function and user experience
+              meet.
             </p>
           </div>
         </div>
