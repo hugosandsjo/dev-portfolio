@@ -70,7 +70,7 @@ export const cases: Case[] = [
     aspectRatio: "4/5",
     website: "fullkoll.nu",
     url: "https://fullkoll.nu/",
-    tools: ["Adobe Illustrator", "Adobe Photoshop"],
+    tools: ["Illustrator", "Photoshop"],
   },
   {
     id: 4,
@@ -168,7 +168,7 @@ export const cases: Case[] = [
       "/bildvarldgransland/festival_02.jpg",
     ],
     aspectRatio: "4/5",
-    tools: ["Procreate", "Adobe Photoshop"],
+    tools: ["Procreate", "Photoshop"],
   },
   {
     id: 9,
@@ -184,6 +184,25 @@ export const cases: Case[] = [
       "/grindebacken/grind.png",
     ],
     aspectRatio: "4/5",
-    tools: ["Procreate", "Adobe Photoshop"],
+    tools: ["Procreate", "Photoshop"],
+  },
+  {
+    id: 10,
+    title: "Uppsala Stadsteater",
+    slug: "uppsala-stadsteater",
+    description:
+      "A project from this spring in the form of a design refresh for Uppsala City Theatre’s new website. The Youth section, along with the three categories Children & Families, Youth, and Schools, were given a new visual identity with their own dedicated illustration and animation. From the main illustrations, individual components could be extracted and adapted for the subcategories within each section. The challenge was to strike the right tone for a sensitive target group, adjusting themes and color choices accordingly. The design needed to convey playfulness and curiosity—without tipping over into being too childish.",
+    imagePath: "/uppsalastadsteater/hatet_instagram-02.jpg",
+    category: "Illustration, Motion, Design",
+    additionalImages: [
+      "/uppsalastadsteater/Ungdomar_final.jpg",
+      "/uppsalastadsteater/Barnochfamiljer_Final.png",
+      "/uppsalastadsteater/Skolor_Final.jpg",
+      "/uppsalastadsteater/hatet_poster.jpg",
+      "/uppsalastadsteater/kidsfamily_uppsala.png",
+      "/uppsalastadsteater/youth_uppsala.png",
+    ],
+    aspectRatio: "16/10",
+    tools: ["Procreate", "Illustrator", "After Effects", "Photoshop"],
   },
 ];
