@@ -200,7 +200,7 @@ export const cases: Case[] = [
       "/uppsalastadsteater/skolor_final.jpg",
       "/uppsalastadsteater/hatet_poster.jpg",
       "/uppsalastadsteater/kidsfamily_uppsala.png",
-      "/uppsalastadsteater/youth_uppsala.png",
+      "/uppsalastadsteater/youth_2_uppsala.png",
     ],
     aspectRatio: "16/10",
     tools: ["Procreate", "Illustrator", "After Effects", "Photoshop"],
