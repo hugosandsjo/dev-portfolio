@@ -195,9 +195,9 @@ export const cases: Case[] = [
     imagePath: "/uppsalastadsteater/hatet_instagram-02.jpg",
     category: "Illustration, Motion, Design",
     additionalImages: [
-      "/uppsalastadsteater/Ungdomar_final.jpg",
-      "/uppsalastadsteater/Barnochfamiljer_Final.png",
-      "/uppsalastadsteater/Skolor_Final.jpg",
+      "/uppsalastadsteater/ungdomar_final.jpg",
+      "/uppsalastadsteater/barnochfamiljer_final.png",
+      "/uppsalastadsteater/skolor_final.jpg",
       "/uppsalastadsteater/hatet_poster.jpg",
       "/uppsalastadsteater/kidsfamily_uppsala.png",
       "/uppsalastadsteater/youth_uppsala.png",
