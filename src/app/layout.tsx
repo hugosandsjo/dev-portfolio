@@ -34,11 +34,11 @@ export default function RootLayout({
           <SideMenuProvider>
             <div className="w-full bg-gray-200">
               <div className="w-full bg-gray-200">
-                <div className="mx-auto w-full max-w-[3000px] px-4 lg:px-10">
+                <div className="mx-auto w-full max-w-[3000px] px-4">
                   <Navigation />
                 </div>
               </div>
-              <main className="mx-auto w-full max-w-[3000px] px-4 lg:px-10">
+              <main className="mx-auto w-full max-w-[3000px] px-4">
                 {children}
               </main>
             </div>
