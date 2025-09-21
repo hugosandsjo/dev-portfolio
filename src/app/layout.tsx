@@ -8,13 +8,13 @@ import { SideMenuProvider } from "@/context/SideMenuContext";
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
-  weight: ["400", "700"], // Add valid weights
+  weight: ["400", "700"],
 });
 
 const outfit = Outfit({
   variable: "--font-outfit",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"], // Add valid weights
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -32,8 +32,16 @@ export default function RootLayout({
       <ReactLenis root>
         <body className={`${outfit.className} ${inter.className} antialiased`}>
           <SideMenuProvider>
-            <Navigation />
-            {children}
+            <div className="w-full bg-gray-200">
+              <div className="w-full bg-gray-200">
+                <div className="mx-auto w-full max-w-[3000px] px-4 lg:px-10">
+                  <Navigation />
+                </div>
+              </div>
+              <main className="mx-auto w-full max-w-[3000px] px-4 lg:px-10">
+                {children}
+              </main>
+            </div>
           </SideMenuProvider>
         </body>
       </ReactLenis>
