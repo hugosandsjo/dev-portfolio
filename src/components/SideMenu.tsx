@@ -72,7 +72,12 @@ export default function SideMenu() {
             <section className="flex flex-col gap-4">
               <div className="flex flex-col gap-1">
                 <h4 className="text-xl font-medium">Enskild firma</h4>
-                <h5 className="text-sm font-light">2020 –</h5>
+                <h5 className="text-sm font-light">2020—</h5>
+              </div>
+              <div className="flex flex-col gap-1">
+                <h4 className="text-xl font-medium">Göteborg Film Festival</h4>
+                <h5 className="text-md font-normal">Digital Producer</h5>
+                <h5 className="text-sm font-light">2025—2026</h5>
               </div>
               <div className="flex flex-col gap-1">
                 <h4 className="text-xl font-medium">Illustratörcentrum</h4>
@@ -80,28 +85,28 @@ export default function SideMenu() {
                   <h5 className="text-md font-normal">
                     Regional representative
                   </h5>
-                  <h5 className="text-sm font-light">2022 –</h5>
+                  <h5 className="text-sm font-light">2022—</h5>
                 </div>
               </div>
               <div className="flex flex-col gap-1">
                 <h4 className="text-xl font-medium">ADA Sweden</h4>
                 <div className="flex gap-1 flex-col">
                   <h5 className="text-md font-normal">Styrelsemedlem</h5>
-                  <h5 className="text-sm font-light">2022 – 2025</h5>
+                  <h5 className="text-sm font-light">2022—2025</h5>
                 </div>
               </div>
               <h2 className="text-md font-medium tracking-wide">EDUCATION</h2>
               <div className="flex flex-col gap-1">
                 <h4 className="text-xl font-semibold">YRGO</h4>
                 <h5 className="text-md font-normal">Web developer</h5>
-                <h5 className="text-sm font-light">2023 – 2025</h5>
+                <h5 className="text-sm font-light">2023—2025</h5>
               </div>
               <div className="flex flex-col gap-1">
                 <h4 className="text-xl font-medium">Kunsthøgskolen i Oslo</h4>
                 <h5 className="text-md font-normal">
                   Bachelor in Graphic Design
                 </h5>
-                <h5 className="text-sm font-light">2017 – 2020</h5>
+                <h5 className="text-sm font-light">2017—2020</h5>
               </div>
               <div className="flex flex-col gap-1">
                 <h4 className="text-xl font-medium">School Of Motion</h4>
@@ -122,12 +127,12 @@ export default function SideMenu() {
               <div className="flex flex-col gap-1">
                 <h4 className="text-xl font-medium">Simma Lugnt</h4>
                 <h5 className="text-md font-normal">Frontend Developer</h5>
-                <h5 className="text-sm font-light">2024 – 2025</h5>
+                <h5 className="text-sm font-light">2024—2025</h5>
               </div>
               <div className="flex flex-col gap-1">
                 <h4 className="text-xl font-medium">Aoki</h4>
                 <h5 className="text-md font-normal">Designer</h5>
-                <h5 className="text-sm font-light">2021 – 2022</h5>
+                <h5 className="text-sm font-light">2021—2022</h5>
               </div>
             </section>
           </div>
@@ -170,10 +175,10 @@ export default function SideMenu() {
               Selected clients:
             </h3>
             <h3 className="text-md font-regular opacity-70">
-              Sveriges Länsstyrelser / Uppsala Stadsteater / Gatutidningen
-              Faktum / Sveriges Stadsmissioner / Malmöfestivalen /
-              Illustratörcentrum / Antaros Medical AB / Dum Keramik / Aoki /
-              Stadshem / Gyldendal Norsk Forlag
+              Göteborg Film Festival / Sveriges Länsstyrelser / Uppsala
+              Stadsteater / Gatutidningen Faktum / Sveriges Stadsmissioner /
+              Malmöfestivalen / Illustratörcentrum / Antaros Medical AB / Dum
+              Keramik / Aoki / Stadshem / Gyldendal Norsk Forlag
             </h3>
           </div>
         </div>
