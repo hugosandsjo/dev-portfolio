@@ -110,7 +110,7 @@ export default function WorkGrid() {
                   </div>
                 </div>
               </div>
-              <h3 className="text-md opacity-60 font-regular italic">
+              <h3 className="text-lg opacity-60 font-regular">
                 {caseItem.category}
               </h3>
               {caseItem.description && (
