@@ -137,7 +137,7 @@ export default function SingleCase({ slug }: SingleCaseProps) {
             <h2 className="text-6xl font-semibold hyphens-auto md:hyphens-none break-words">
               {addCustomHyphens(caseItem.title)}
             </h2>
-            <div className="text-2xl font-regular lg:text-3xl opacity-60">
+            <div className="text-2xl font-regular lg:text-2xl opacity-60">
               {caseItem.category}
             </div>
           </div>
@@ -146,14 +146,14 @@ export default function SingleCase({ slug }: SingleCaseProps) {
               {caseItem.description}
             </p>
           )}
-          <div className="flex flex-wrap gap-1 text-sm">
+          <div className="flex my-2 flex-wrap gap-1 text-sm">
             {caseItem.tools && caseItem.tools.length > 0
               ? caseItem.tools.map((tool, index) => (
                   <div
                     className="px-2 py-1 lg:px-3 border border-black rounded-full"
                     key={index}
                   >
-                    <p key={index} className="text-xs lg:text-sm">
+                    <p key={index} className="text-sm lg:text-md">
                       {tool}
                     </p>
                   </div>
