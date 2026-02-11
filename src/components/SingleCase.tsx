@@ -33,7 +33,7 @@ export default function SingleCase({ slug }: SingleCaseProps) {
       {
         threshold: 0.2,
         rootMargin: "0px 0px -50px 0px",
-      }
+      },
     );
 
     // Select elements to observe for fade-in
@@ -50,7 +50,7 @@ export default function SingleCase({ slug }: SingleCaseProps) {
       {
         threshold: [1.0],
         rootMargin: "-1px 0px 0px 0px", // Trigger when exactly at top
-      }
+      },
     );
 
     if (headerRef.current) {
@@ -117,8 +117,8 @@ export default function SingleCase({ slug }: SingleCaseProps) {
                   caseItem.aspectRatio === "1/1"
                     ? "aspect-square"
                     : caseItem.aspectRatio === "16/10"
-                    ? "aspect-[16/10]"
-                    : "aspect-[4/5]"
+                      ? "aspect-[16/10]"
+                      : "aspect-[4/5]"
                 }`}
               >
                 <Image
@@ -134,10 +134,10 @@ export default function SingleCase({ slug }: SingleCaseProps) {
         {/* Right column with sticky text */}
         <div className="flex flex-col h-fit gap-2 order-1 2xl:order-2 2xl:sticky 2xl:top-22 2xl:px-16 2xl:py-10">
           <div className="flex flex-col gap-2">
-            <h2 className="text-6xl font-semibold hyphens-auto md:hyphens-none break-words">
+            <h2 className="lg:text-6xl text-4xl font-semibold hyphens-auto md:hyphens-none break-words">
               {addCustomHyphens(caseItem.title)}
             </h2>
-            <div className="text-2xl font-regular lg:text-2xl opacity-60">
+            <div className="text-xl font-regular lg:text-2xl opacity-60">
               {caseItem.category}
             </div>
           </div>
