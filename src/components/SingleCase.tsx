@@ -64,15 +64,15 @@ export default function SingleCase({ slug }: SingleCaseProps) {
     };
   }, []);
 
-  function addCustomHyphens(title: string): string {
-    const hyphenMap: Record<string, string> = {
-      Malmöfestivalen: "Malmö\u00ADfestivalen",
-      Illustrationsfestival: "Illustrations\u00ADfestival",
-      "Grindebacken Strandhak": "Grinde\u00ADbacken Strandhak",
-    };
+  // function addCustomHyphens(title: string): string {
+  //   const hyphenMap: Record<string, string> = {
+  //     Malmöfestivalen: "Malmö\u00ADfestivalen",
+  //     Illustrationsfestival: "Illustrations\u00ADfestival",
+  //     "Grindebacken Strandhak": "Grinde\u00ADbacken Strandhak",
+  //   };
 
-    return hyphenMap[title] || title;
-  }
+  //   return hyphenMap[title] || title;
+  // }
 
   return (
     <section className="col-span-full md:col-span-8 2xl:col-span-10 flex flex-col gap-4">
@@ -135,7 +135,7 @@ export default function SingleCase({ slug }: SingleCaseProps) {
         <div className="flex flex-col h-fit gap-2 order-1 2xl:order-2 2xl:sticky 2xl:top-22 2xl:px-16 2xl:py-10">
           <div className="flex flex-col gap-2">
             <h2 className="lg:text-6xl text-4xl font-semibold hyphens-auto md:hyphens-none break-words">
-              {addCustomHyphens(caseItem.title)}
+              {caseItem.title}
             </h2>
             <div className="text-xl font-regular lg:text-2xl opacity-60">
               {caseItem.category}
