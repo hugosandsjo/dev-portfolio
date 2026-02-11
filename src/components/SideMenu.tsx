@@ -18,7 +18,7 @@ export default function SideMenu() {
 
   return (
     <section className="flex flex-col gap-2 sticky top-0 h-fit">
-      <div className="flex flex-col pt-5 bg-gray-200 gap-4">
+      <div className="flex flex-col pt-5 bg-gray-200 gap-2">
         <div className="flex flex-col gap-2">
           <div
             className="flex justify-between items-center cursor-pointer"
